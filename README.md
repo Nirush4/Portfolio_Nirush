@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio_Nirush
 
-## Getting Started
+This is a personal portfolio project built with **Next.js** and **TypeScript**.
 
-First, run the development server:
+---
+
+## Features
+
+- Built with Next.js 13 (App Router)
+- TypeScript for type safety
+- Tailwind CSS / Custom CSS (if applicable)
+- Responsive design
+- SEO-friendly
+
+---
+
+## Installation
+
+### Prerequisites
+
+Make sure you have **Node.js** (version 18 or above) and **npm** installed. Check your versions:
+
+```bash
+node -v
+npm -v
+```
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Nirush4/Portfolio_Nirush.git
+cd Portfolio_Nirush
+```
+
+### 2.npm install
+
+```bash
+npm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The portfolio includes sections for
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- A personal introduction
+- Featured projects with details and links
+- A skills overview
+- Contact information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages and Features 📄
 
-## Learn More
+### Home
 
-To learn more about Next.js, take a look at the following resources:
+- Brief personal intro and site navigation
+- Call-to-action buttons (e.g., view projects, contact)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Displays a selection of my front-end development projects
+- Each project includes a thumbnail, description, and link to live site and GitHub repo
 
-## Deploy on Vercel
+### About
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- A personal summary, career goals, and a look into my journey in web development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Contact
+
+- Contact form with client-side validation
+- Links to social platforms like LinkedIn and GitHub
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Vite
+- Git & GitHub
+
+## Deployment 🚀
+
+This site is deployed and publicly available at:
+
+- [Live Site](https://your-netlify-url.netlify.app/)  
+  _(Update with actual link when deployed)_
+
+## Testing and Debug 🧪
+
+- HTML Validation: [W3C Validator](https://validator.w3.org/)
+- Accessibility: [WAVE Tool](https://wave.webaim.org/)
+
+## Dependencies 📦
+
+    •	Prettier – Code formatting
+    •	eslint
+
+## Contact 📬
+
+- LinkedIn
+- GitHub
+
+## Author 👨‍💻​
+
+• Nirushan Rajamanoharan (@Nirush4)
