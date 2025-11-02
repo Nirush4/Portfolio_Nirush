@@ -4,6 +4,23 @@ This is a personal portfolio project built with **Next.js** and **TypeScript**.
 
 ---
 
+## 📦 Tech Stack
+
+- **Languages & Tools**: TypeScript, Next.js
+- **Testing**:
+  - [Vitest](https://vitest.dev/) – unit testing
+  - [Playwright](https://playwright.dev/) – end-to-end (E2E) testing
+- **Linting & Formatting**:
+  - [ESLint](https://eslint.org/) – JavaScript linting
+  - [Prettier](https://prettier.io/) – code formatting
+- **Git Hooks & Linting Automation**:
+  - [Husky](https://typicode.github.io/husky)
+  - [lint-staged](https://github.com/okonet/lint-staged)
+
+---
+
+## 🚀 Getting Started
+
 ## Features
 
 - Built with Next.js 13 (App Router)
@@ -67,28 +84,12 @@ npm run dev
 
 - A personal summary, career goals, and a look into my journey in web development
 
-### Contact
-
-- Contact form with client-side validation
-- Links to social platforms like LinkedIn and GitHub
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Vite
-- Git & GitHub
-
 ## Deployment 🚀
 
 This site is deployed and publicly available at:
 
-- [Live Site](https://your-netlify-url.netlify.app/)  
+- [Live Site](https://portfolio-nirush.netlify.app/)  
   _(Update with actual link when deployed)_
-
-## Testing and Debug 🧪
-
-- HTML Validation: [W3C Validator](https://validator.w3.org/)
-- Accessibility: [WAVE Tool](https://wave.webaim.org/)
 
 ## Dependencies 📦
 
@@ -97,8 +98,9 @@ This site is deployed and publicly available at:
 
 ## Contact 📬
 
-- LinkedIn
-- GitHub
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-profile-blue)](https://www.linkedin.com/in/nirushan-rajamanoharan-056765209/)
+
+- [![GitHub](https://img.shields.io/badge/GitHub-profile-black)](https://github.com/Nirush4)
 
 ## Author 👨‍💻​
 
