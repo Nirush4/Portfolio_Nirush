@@ -1,78 +1,52 @@
-// components/Hero.tsx
 'use client';
 
 import { motion } from 'framer-motion';
 import { GradientSlideButton } from './ui/gradient-slide-button';
-// import Image from 'next/image';
 import { GradientText } from '../components/ui/shadcn-io/gradient-text/index';
-import ProfileCard from './ProfileCard';
+import Orb from './Orb';
 
 export function Hero() {
   return (
-    <div className='grid items-center justify-center gap-10 mt-30 lg:grid-cols-2'>
-      {/* ProfileCard Section */}
-      <motion.div
-        initial={{ y: 18, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
-        className='flex justify-center order-1 lg:order-2'
-      >
-        <div className='relative flex items-center justify-center sm:h-120 md:h-140 lg:w-116 lg:h-160'>
-          <ProfileCard
-            className='h-full'
-            name='NIRUSHAN'
-            title='Frontend Developer'
-            handle='nirush4'
-            status='Online'
-            contactText='Contact Me'
-            avatarUrl='IMG_9314.JPG'
-            showUserInfo={true}
-            enableTilt={true}
-            enableMobileTilt={false}
-            onContactClick={() => {
-              const section = document.getElementById('contact');
-              if (section) section.scrollIntoView({ behavior: 'smooth' });
-            }}
-            behindGradient={null}
-            innerGradient={null}
-            showBehindGradient={false}
-            miniAvatarUrl={undefined}
-          />
-        </div>
-      </motion.div>
+    <section className='relative flex flex-col w-full p-10 mt-10 overflow-hidden sm:min-h-screen sm:mt-5 sm:block'>
+      {/* Orb Background */}
+      <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full flex-shrink-0 sm:flex-shrink'>
+        <Orb
+          hoverIntensity={1.5}
+          rotateOnHover={true}
+          hue={0}
+          forceHoverState={false}
+        />
+      </div>
 
-      {/* Text Section */}
+      {/* Foreground Content */}
       <motion.div
         initial={{ y: 18, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className='flex flex-col justify-center order-2 space-y-6 text-center lg:text-left lg:order-1 lg:mb-0'
+        className='relative z-10 w-full max-w-3xl px-6 text-center sm:absolute sm:max-w-3xl sm:px-6 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-fit sm:top-1/2 sm:left-1/2'
       >
-        <h1 className='text-4xl font-bold leading-tight text-black md:text-6xl dark:text-white'>
-          <span className='gradient-text'>
+        <h1 className='font-bold text-center text-black leading-[1rem] w-fit sm:text-6xl dark:text-white'>
+          <span className='text-sm sm:text-2xl gradient-text'>
             Hi, I&apos;m Nirushan Rajamanoharan
           </span>{' '}
           <GradientText
-            className='text-2xl gradient-text'
-            text='Frontend Developer & Graphic Designer'
+            className='text-xl sm:text-3xl lg:text-5xl gradient-text'
+            text='Frontend Developer'
+            gradient='linear-gradient(90deg, #3b82f6 0%, #a855f7 25%, #ec4899 50%,#a855f7 75%, #3b82f6 100%)'
+          />
+          <GradientText
+            className='text-xl sm:text-3xl lg:text-4xl gradient-text'
+            text='& Graphic Designer'
             gradient='linear-gradient(90deg, #3b82f6 0%, #a855f7 25%, #ec4899 50%,#a855f7 75%, #3b82f6 100%)'
           />
         </h1>
 
-        <p className='mx-auto text-black dark:text-neutral-300 max-w-prose lg:mx-0'>
-          I craft delightful user interfaces with a keen eye for typography,
-          color, and motion. I love building performant, accessible, and
-          visually compelling web experiences.
-        </p>
-
-        <div className='flex flex-wrap items-center justify-center gap-3 lg:justify-start'>
-          <a
-            href='#projects'
-            className='inline-flex px-5 py-3 font-medium text-white transition bg-black rounded-md hover:opacity-80 dark:bg-white dark:text-neutral-900 dark:hover:opacity-80'
-          >
-            View Projects
-          </a>
-
+        <div className='flex flex-wrap items-center justify-center gap-3 mt-6'>
+          <GradientSlideButton>
+            <a href='#projects' className='py-6 px-7'>
+              View Projects
+            </a>
+          </GradientSlideButton>
           <GradientSlideButton>
             <a href='#contact' className='py-6 px-7'>
               Get in Touch
@@ -80,6 +54,6 @@ export function Hero() {
           </GradientSlideButton>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }
