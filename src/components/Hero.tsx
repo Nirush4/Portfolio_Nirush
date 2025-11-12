@@ -32,7 +32,7 @@ export function Hero() {
         className='relative z-10 w-full max-w-3xl text-center sm:absolute sm:max-w-3xl sm:px-6 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-fit sm:top-1/2 sm:left-1/2'
       >
         <h1 className='font-bold text-center text-black leading-[1rem] w-fit sm:text-6xl dark:text-white'>
-          <span className='text-sm sm:text-2xl gradient-text'>
+          <span className='text-base sm:text-2xl gradient-text'>
             Hi, I&apos;m Nirushan Rajamanoharan
           </span>{' '}
           <GradientText
