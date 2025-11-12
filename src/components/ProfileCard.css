@@ -294,7 +294,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 832px) {
   .pc-card {
     height: 70dvh;
     max-height: 450px;

@@ -7,7 +7,7 @@ import Orb from './Orb';
 
 export function Hero() {
   return (
-    <section className='relative flex flex-col w-full p-5 overflow-hidden sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
+    <section className='relative flex flex-col w-full p-5 overflow-hidden mb-15 sm:mb-0 sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
       {/* Orb Background */}
       <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full mb-10 flex-shrink-0 sm:flex-shrink'>
         <Orb
