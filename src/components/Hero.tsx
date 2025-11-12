@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className='relative flex flex-col w-full p-5 overflow-hidden sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
       {/* Orb Background */}
-      <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full flex-shrink-0 sm:flex-shrink'>
+      <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full mb-10 flex-shrink-0 sm:flex-shrink'>
         <Orb
           hoverIntensity={1.5}
           rotateOnHover={true}

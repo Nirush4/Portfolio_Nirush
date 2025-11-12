@@ -15,7 +15,7 @@ export default function Page() {
       <Navbar />
       <main className='relative'>
         <Background />
-        <section id='home' className='flex items-center min-h-[80dvh]'>
+        <section id='home' className='flex items-center min-h-screen'>
           <div className='container px-6 mx-auto md:px-8'>
             <Hero />
           </div>
