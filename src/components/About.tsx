@@ -2,32 +2,198 @@
 
 import { motion } from 'framer-motion';
 import ProfileCard from './ProfileCard';
+import LogoLoop from './LogoLoop';
 
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiBootstrap,
+  SiTailwindcss,
+  SiGit,
+  SiGithub,
+  SiVite,
+  SiNpm,
+  SiVercel,
+  SiNetlify,
+  SiFigma,
+  SiCanva,
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiAdobeillustrator,
+  SiAdobelightroom,
+} from 'react-icons/si';
+
+// ------------------------
+// Types
+// ------------------------
+export interface TechLogo {
+  src?: string;
+  srcSet?: string;
+  sizes?: string;
+  href: string;
+  width?: number;
+  height?: number;
+  alt?: string;
+  title?: string;
+  node?: React.ReactNode;
+}
+
+// ------------------------
+// LOGO LINES
+// ------------------------
+export const techLogosLine1: TechLogo[] = [
+  {
+    node: <SiHtml5 size={40} />,
+    title: 'HTML',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  },
+  {
+    node: <SiCss3 size={40} />,
+    title: 'CSS',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  },
+  {
+    node: <SiJavascript size={40} />,
+    title: 'JavaScript',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  },
+  {
+    node: <SiTypescript size={40} />,
+    title: 'TypeScript',
+    href: 'https://www.typescriptlang.org/',
+  },
+  { node: <SiReact size={40} />, title: 'React', href: 'https://react.dev/' },
+  {
+    node: <SiNextdotjs size={40} />,
+    title: 'Next.js',
+    href: 'https://nextjs.org/',
+  },
+  {
+    node: <SiBootstrap size={40} />,
+    title: 'Bootstrap',
+    href: 'https://getbootstrap.com/',
+  },
+  {
+    node: <SiTailwindcss size={40} />,
+    title: 'Tailwind CSS',
+    href: 'https://tailwindcss.com/',
+  },
+  { node: <SiGit size={40} />, title: 'Git', href: 'https://git-scm.com/' },
+  {
+    node: <SiGithub size={40} />,
+    title: 'GitHub',
+    href: 'https://github.com/',
+  },
+  { node: <SiVite size={40} />, title: 'Vite', href: 'https://vitejs.dev/' },
+  { node: <SiNpm size={40} />, title: 'NPM', href: 'https://www.npmjs.com/' },
+];
+
+// line 2
+export const techLogosLine2: TechLogo[] = [
+  {
+    node: <span className='text-3xl font-bold'>JWT</span>,
+    title: 'JWT',
+    href: '',
+  },
+  {
+    node: <span className='text-3xl font-bold'>MSW</span>,
+    title: 'MSW',
+    href: '',
+  },
+  {
+    node: <span className='text-3xl font-bold'>Jsdom</span>,
+    title: 'Jsdom',
+    href: '',
+  },
+  {
+    node: <span className='text-3xl font-bold'>Vitest</span>,
+    title: 'Vitest',
+    href: '',
+  },
+  {
+    node: <span className='text-3xl font-bold'>Playwright</span>,
+    title: 'Playwright',
+    href: '',
+  },
+  {
+    node: <span className='text-3xl font-bold'>Cypress</span>,
+    title: 'Cypress',
+    href: '',
+  },
+  {
+    node: <SiVercel size={40} />,
+    title: 'Vercel',
+    href: 'https://vercel.com/',
+  },
+  {
+    node: <SiNetlify size={40} />,
+    title: 'Netlify',
+    href: 'https://www.netlify.com/',
+  },
+  {
+    node: <SiFigma size={40} />,
+    title: 'Figma',
+    href: 'https://www.figma.com/',
+  },
+  {
+    node: <SiCanva size={40} />,
+    title: 'Canva',
+    href: 'https://www.canva.com/',
+  },
+  {
+    node: <SiAdobeillustrator size={40} />,
+    title: 'Illustrator',
+    href: 'https://www.adobe.com/products/illustrator.html',
+  },
+  {
+    node: <SiAdobephotoshop size={40} />,
+    title: 'Photoshop',
+    href: 'https://www.adobe.com/products/photoshop.html',
+  },
+  {
+    node: <SiAdobelightroom size={40} />,
+    title: 'Lightroom',
+    href: 'https://www.adobe.com/products/photoshop-lightroom.html',
+  },
+  {
+    node: <SiAdobepremierepro size={40} />,
+    title: 'Premiere Pro',
+    href: 'https://www.adobe.com/products/premiere.html',
+  },
+];
+
+// ----------------------
+//   ABOUT COMPONENT
+// ----------------------
 export function About() {
   return (
     <section
       id='about'
-      className='relative flex items-center justify-center min-h-screen'
+      className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:mt-10'
     >
       {/* Background Glow */}
-      <div className='absolute inset-0 pointer-events-none'>
-        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-pink-500/30 rounded-full blur-3xl top-1/3 -left-40'></div>
-        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-pink-400/20 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+      <div className='absolute inset-0 pointer-events-none -z-10'>
+        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-pink-500/15 rounded-full blur-3xl top-1/3 -left-40'></div>
+        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-pink-400/15 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
       {/* Main Content */}
       <div className='relative z-10 grid items-center justify-center w-full gap-12 px-6 py-20 mx-auto max-w-7xl md:grid-cols-12'>
-        {/* LEFT — Text Section (60%) */}
+        {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           className='flex flex-col items-center justify-center order-2 p-8 space-y-8 text-center border shadow-xl md:order-1 md:col-span-7 md:items-start md:text-left backdrop-blur-md bg-white/10 dark:bg-neutral-900/30 rounded-2xl border-white/10'
         >
           <h2 className='text-2xl font-extrabold tracking-tight md:text-4xl text-neutral-900 dark:text-white'>
             About{' '}
-            <span className='text-2xl text-transp--behind-gradient: none; --inner-gradient: linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%); --pointer-x: 50%; --pointer-y: 50%; --background-x: 50%; --background-y: 50%; --pointer-from-center: 0; --pointer-from-top: 0.5; --pointer-from-left: 0.5; --rotate-x: 0deg; --rotate-y: 0deg;arent md:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text animate-gradient-x'>
+            <span className='text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>
               Me
             </span>
           </h2>
@@ -87,16 +253,17 @@ export function About() {
           </motion.span>
         </motion.div>
 
-        {/* RIGHT — Profile Card (40%) */}
+        {/* RIGHT CONTAINER */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 1.7, ease: 'easeOut' }}
+          transition={{ delay: 0.3, duration: 1.2, ease: 'easeOut' }}
           className='flex items-center justify-center order-1 md:order-2 md:col-span-5'
         >
-          <div className='relative flex items-center justify-center w-full max-w-md'>
-            <div className='absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-2xl rounded-3xl'></div>
+          <div className='relative flex items-center justify-center w-full max-w-md z-[2]'>
+            <div className='absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-2xl rounded-3xl -z-10'></div>
+
             <ProfileCard
               className='h-full'
               name='NIRUSHAN'
@@ -104,8 +271,8 @@ export function About() {
               handle='nirush4'
               status='Online'
               contactText='Contact Me'
-              avatarUrl='IMG_9314.JPG'
-              miniAvatarUrl='IMG_9314.JPG'
+              avatarUrl='/IMG_9314.JPG' // ← FIXED
+              miniAvatarUrl='/IMG_9314.JPG' // ← FIXED
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -120,6 +287,57 @@ export function About() {
           </div>
         </motion.div>
       </div>
+
+      {/* SKILLS SECTION */}
+      <section className='relative w-full px-6 mx-auto mt-20 mb-40 overflow-visible max-w-7xl sm:mt-28'>
+        <motion.h2 className='text-3xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
+          My{' '}
+          <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+            Skills
+          </span>
+        </motion.h2>
+
+        <motion.p className='max-w-2xl mx-auto mt-5 text-base text-center text-neutral-700 dark:text-neutral-300 md:text-lg'>
+          Technologies I use to build immersive and high-performance digital
+          experiences.
+        </motion.p>
+
+        <div className='relative flex items-center justify-center mt-10 overflow-visible sm:mt-20'>
+          <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
+
+          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden'>
+            {/* LINE 1 */}
+            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform mb-10'>
+              <LogoLoop
+                logos={techLogosLine1}
+                speed={60}
+                direction='left'
+                logoHeight={20}
+                gap={70}
+                hoverSpeed={0}
+                scaleOnHover
+                fadeOut
+                fadeOutColor='transparent'
+              />
+            </div>
+
+            {/* LINE 2 */}
+            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform'>
+              <LogoLoop
+                logos={techLogosLine2}
+                speed={60}
+                direction='right'
+                logoHeight={20}
+                gap={70}
+                hoverSpeed={0}
+                scaleOnHover
+                fadeOut
+                fadeOutColor='transparent'
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

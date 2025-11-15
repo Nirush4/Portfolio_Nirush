@@ -17,12 +17,6 @@ html {
   max-width: 1220px;
 }
 
-/* Subtle gradients for text */
-/* .gradient-text {
-  background: linear-gradient(90deg, #fff, #a3a3a3 60%, #737373);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 /* Optional: basic light/dark surface text defaults */
 :root {
