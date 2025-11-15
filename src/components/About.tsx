@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import ProfileCard from './ProfileCard';
 import LogoLoop from './LogoLoop';
+
 import {
   SiHtml5,
   SiCss3,
@@ -41,6 +42,9 @@ export interface TechLogo {
   node?: React.ReactNode;
 }
 
+// ------------------------
+// LOGO LINES
+// ------------------------
 export const techLogosLine1: TechLogo[] = [
   {
     node: <SiHtml5 size={40} />,
@@ -88,9 +92,7 @@ export const techLogosLine1: TechLogo[] = [
   { node: <SiNpm size={40} />, title: 'NPM', href: 'https://www.npmjs.com/' },
 ];
 
-// ------------------------
-// LINE 2 — Testing, Deployment & Design
-// ------------------------
+// line 2
 export const techLogosLine2: TechLogo[] = [
   {
     node: <span className='text-3xl font-bold'>JWT</span>,
@@ -98,11 +100,7 @@ export const techLogosLine2: TechLogo[] = [
     href: '',
   },
   {
-    node: (
-      <span className='flex justify-center text-3xl font-bold align-middle'>
-        MSW
-      </span>
-    ),
+    node: <span className='text-3xl font-bold'>MSW</span>,
     title: 'MSW',
     href: '',
   },
@@ -162,47 +160,35 @@ export const techLogosLine2: TechLogo[] = [
     href: 'https://www.adobe.com/products/photoshop-lightroom.html',
   },
   {
-    node: (
-      <a
-        href='https://www.adobe.com/products/indesign.html'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='text-3xl font-bold'
-      >
-        Cypress
-      </a>
-    ),
-    title: 'InDesign',
-    href: 'https://www.adobe.com/products/indesign.html',
-  },
-  {
     node: <SiAdobepremierepro size={40} />,
     title: 'Premiere Pro',
     href: 'https://www.adobe.com/products/premiere.html',
   },
 ];
 
-// About Component
+// ----------------------
+//   ABOUT COMPONENT
+// ----------------------
 export function About() {
   return (
     <section
       id='about'
-      className='relative flex flex-col items-center justify-center min-h-screen md:mt-10'
+      className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:mt-10'
     >
       {/* Background Glow */}
-      <div className='absolute inset-0 pointer-events-none'>
+      <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-pink-500/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-pink-400/15 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
       {/* Main Content */}
       <div className='relative z-10 grid items-center justify-center w-full gap-12 px-6 py-20 mx-auto max-w-7xl md:grid-cols-12'>
-        {/* LEFT — Text Section */}
+        {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           className='flex flex-col items-center justify-center order-2 p-8 space-y-8 text-center border shadow-xl md:order-1 md:col-span-7 md:items-start md:text-left backdrop-blur-md bg-white/10 dark:bg-neutral-900/30 rounded-2xl border-white/10'
         >
           <h2 className='text-2xl font-extrabold tracking-tight md:text-4xl text-neutral-900 dark:text-white'>
@@ -267,16 +253,17 @@ export function About() {
           </motion.span>
         </motion.div>
 
-        {/* RIGHT — Profile Card */}
+        {/* RIGHT CONTAINER */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 1.7, ease: 'easeOut' }}
+          transition={{ delay: 0.3, duration: 1.2, ease: 'easeOut' }}
           className='flex items-center justify-center order-1 md:order-2 md:col-span-5'
         >
-          <div className='relative flex items-center justify-center w-full max-w-md'>
-            <div className='absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-2xl rounded-3xl'></div>
+          <div className='relative flex items-center justify-center w-full max-w-md z-[2]'>
+            <div className='absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-2xl rounded-3xl -z-10'></div>
+
             <ProfileCard
               className='h-full'
               name='NIRUSHAN'
@@ -284,8 +271,8 @@ export function About() {
               handle='nirush4'
               status='Online'
               contactText='Contact Me'
-              avatarUrl='IMG_9314.JPG'
-              miniAvatarUrl='IMG_9314.JPG'
+              avatarUrl='/IMG_9314.JPG' // ← FIXED
+              miniAvatarUrl='/IMG_9314.JPG' // ← FIXED
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -301,50 +288,28 @@ export function About() {
         </motion.div>
       </div>
 
-      {/* SKILLS — NEO ORBIT DOUBLE LINES */}
-      <section className='relative w-full px-6 mx-auto mt-20 mb-40 max-w-7xl sm:mt-28'>
-        {/* Section Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className='text-3xl font-extrabold tracking-tight text-center text-white md:text-4xl'
-        >
+      {/* SKILLS SECTION */}
+      <section className='relative w-full px-6 mx-auto mt-20 mb-40 overflow-visible max-w-7xl sm:mt-28'>
+        <motion.h2 className='text-3xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
           My{' '}
           <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
             Skills
           </span>
         </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className='max-w-2xl mx-auto mt-5 text-base text-center text-neutral-700 dark:text-neutral-300 md:text-lg'
-        >
+        <motion.p className='max-w-2xl mx-auto mt-5 text-base text-center text-neutral-700 dark:text-neutral-300 md:text-lg'>
           Technologies I use to build immersive and high-performance digital
           experiences.
         </motion.p>
 
-        {/* NEO ORBIT CONTAINER */}
-        <div className='relative flex items-center justify-center mt-10 sm:mt-20'>
-          {/* Outer Glow Ring */}
+        <div className='relative flex items-center justify-center mt-10 overflow-visible sm:mt-20'>
           <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
 
-          {/* Neon Glass Panel */}
-          <div className='relative w-full py-12 backdrop-blur-xl bg-white/5 dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden group'>
-            {/* Spotlight Layer */}
-            <div className='absolute inset-0 transition-all duration-700 opacity-0 bg-gradient-to-b from-white/5 to-transparent group-hover:opacity-100' />
-
-            {/* Behind Glow */}
-            <div className='absolute -top-40 left-1/2 -translate-x-1/2 bg-gradient-to-br from-indigo-500/40 to-pink-500/40 blur-[90px] rounded-full'></div>
-
-            {/* ------------------------------
-          LINE 1 — SCROLL LEFT
-      -------------------------------- */}
-            <div className='relative w-full sm:h-[50px] overflow-hidden mb-10'>
+          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden'>
+            {/* LINE 1 */}
+            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform mb-10'>
               <LogoLoop
-                logos={techLogosLine1} // ← first line logos
+                logos={techLogosLine1}
                 speed={60}
                 direction='left'
                 logoHeight={20}
@@ -353,16 +318,13 @@ export function About() {
                 scaleOnHover
                 fadeOut
                 fadeOutColor='transparent'
-                ariaLabel='Top skill line'
               />
             </div>
 
-            {/* ------------------------------
-          LINE 2 — SCROLL RIGHT
-      -------------------------------- */}
-            <div className='relative w-full sm:h-[50px] overflow-hidden'>
+            {/* LINE 2 */}
+            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform'>
               <LogoLoop
-                logos={techLogosLine2} // ← first line logos                // ← second line logos
+                logos={techLogosLine2}
                 speed={60}
                 direction='right'
                 logoHeight={20}
@@ -371,7 +333,6 @@ export function About() {
                 scaleOnHover
                 fadeOut
                 fadeOutColor='transparent'
-                ariaLabel='Bottom skill line'
               />
             </div>
           </div>
