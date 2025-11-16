@@ -16,7 +16,7 @@ export default function Page() {
       <main className='relative overflow-x-hidden'>
         <section
           id='home'
-          className='flex items-center sm:min-h-screen min-h-[90dvh]'
+          className='flex items-center sm:min-h-screen min-h-[85dvh]'
         >
           <div className='container px-6 mx-auto mt-20 sm:mt-0 md:px-8'>
             <Hero />

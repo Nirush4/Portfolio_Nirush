@@ -19,12 +19,12 @@ export function Footer() {
           </p>
         </div>
 
-        <div className='flex items-center gap-4 mt-4'>
+        <div className='flex items-center gap-10 mt-4'>
           <a
             href='https://www.linkedin.com/in/nirushan-rajamanoharan/'
             target='_blank'
             rel='noreferrer'
-            className='transition hover:text-white text-neutral-700 dark:text-neutral-300'
+            className='text-sm transition sm:text-base hover:text-white text-neutral-700 dark:text-neutral-300'
           >
             LinkedIn
           </a>
@@ -32,13 +32,13 @@ export function Footer() {
             href='https://github.com/Nirush4'
             target='_blank'
             rel='noreferrer'
-            className='transition hover:text-white text-neutral-700 dark:text-neutral-300'
+            className='text-sm transition sm:text-base hover:text-white text-neutral-700 dark:text-neutral-300'
           >
             GitHub
           </a>
           <a
             href='#home'
-            className='transition hover:text-white text-neutral-700 dark:text-neutral-300'
+            className='text-sm transition sm:text-base hover:text-white text-neutral-700 dark:text-neutral-300'
           >
             Back to top ↑
           </a>

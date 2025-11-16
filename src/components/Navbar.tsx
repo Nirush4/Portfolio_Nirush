@@ -82,6 +82,7 @@ export function Navbar() {
             initial={false}
             animate={mobileOpen ? { rotate: 90 } : { rotate: 0 }}
             transition={{ duration: 0.3 }}
+            className='text-2xl font-medium leading-none'
           >
             ☰
           </motion.div>
