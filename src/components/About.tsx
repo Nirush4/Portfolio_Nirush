@@ -47,49 +47,49 @@ export interface TechLogo {
 // ------------------------
 export const techLogosLine1: TechLogo[] = [
   {
-    node: <SiHtml5 size={40} />,
+    node: <SiHtml5 size={35} />,
     title: 'HTML',
     href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   {
-    node: <SiCss3 size={40} />,
+    node: <SiCss3 size={35} />,
     title: 'CSS',
     href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
   {
-    node: <SiJavascript size={40} />,
+    node: <SiJavascript size={35} />,
     title: 'JavaScript',
     href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
-    node: <SiTypescript size={40} />,
+    node: <SiTypescript size={35} />,
     title: 'TypeScript',
     href: 'https://www.typescriptlang.org/',
   },
-  { node: <SiReact size={40} />, title: 'React', href: 'https://react.dev/' },
+  { node: <SiReact size={35} />, title: 'React', href: 'https://react.dev/' },
   {
-    node: <SiNextdotjs size={40} />,
+    node: <SiNextdotjs size={35} />,
     title: 'Next.js',
     href: 'https://nextjs.org/',
   },
   {
-    node: <SiBootstrap size={40} />,
+    node: <SiBootstrap size={35} />,
     title: 'Bootstrap',
     href: 'https://getbootstrap.com/',
   },
   {
-    node: <SiTailwindcss size={40} />,
+    node: <SiTailwindcss size={35} />,
     title: 'Tailwind CSS',
     href: 'https://tailwindcss.com/',
   },
-  { node: <SiGit size={40} />, title: 'Git', href: 'https://git-scm.com/' },
+  { node: <SiGit size={35} />, title: 'Git', href: 'https://git-scm.com/' },
   {
-    node: <SiGithub size={40} />,
+    node: <SiGithub size={35} />,
     title: 'GitHub',
     href: 'https://github.com/',
   },
-  { node: <SiVite size={40} />, title: 'Vite', href: 'https://vitejs.dev/' },
-  { node: <SiNpm size={40} />, title: 'NPM', href: 'https://www.npmjs.com/' },
+  { node: <SiVite size={35} />, title: 'Vite', href: 'https://vitejs.dev/' },
+  { node: <SiNpm size={35} />, title: 'NPM', href: 'https://www.npmjs.com/' },
 ];
 
 // line 2
@@ -125,42 +125,42 @@ export const techLogosLine2: TechLogo[] = [
     href: '',
   },
   {
-    node: <SiVercel size={40} />,
+    node: <SiVercel size={35} />,
     title: 'Vercel',
     href: 'https://vercel.com/',
   },
   {
-    node: <SiNetlify size={40} />,
+    node: <SiNetlify size={35} />,
     title: 'Netlify',
     href: 'https://www.netlify.com/',
   },
   {
-    node: <SiFigma size={40} />,
+    node: <SiFigma size={35} />,
     title: 'Figma',
     href: 'https://www.figma.com/',
   },
   {
-    node: <SiCanva size={40} />,
+    node: <SiCanva size={35} />,
     title: 'Canva',
     href: 'https://www.canva.com/',
   },
   {
-    node: <SiAdobeillustrator size={40} />,
+    node: <SiAdobeillustrator size={35} />,
     title: 'Illustrator',
     href: 'https://www.adobe.com/products/illustrator.html',
   },
   {
-    node: <SiAdobephotoshop size={40} />,
+    node: <SiAdobephotoshop size={35} />,
     title: 'Photoshop',
     href: 'https://www.adobe.com/products/photoshop.html',
   },
   {
-    node: <SiAdobelightroom size={40} />,
+    node: <SiAdobelightroom size={35} />,
     title: 'Lightroom',
     href: 'https://www.adobe.com/products/photoshop-lightroom.html',
   },
   {
-    node: <SiAdobepremierepro size={40} />,
+    node: <SiAdobepremierepro size={35} />,
     title: 'Premiere Pro',
     href: 'https://www.adobe.com/products/premiere.html',
   },
@@ -177,18 +177,18 @@ export function About() {
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
-        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-pink-500/15 rounded-full blur-3xl top-1/3 -left-40'></div>
-        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-pink-400/15 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
+        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
       {/* Main Content */}
-      <div className='relative z-10 grid items-center justify-center w-full gap-12 px-6 py-20 mx-auto max-w-7xl md:grid-cols-12'>
+      <div className='relative z-10 grid items-center justify-center w-full gap-12 py-20 mx-auto max-w-7xl md:grid-cols-12'>
         {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
           className='flex flex-col items-center justify-center order-2 p-8 space-y-8 text-center border shadow-xl md:order-1 md:col-span-7 md:items-start md:text-left backdrop-blur-md bg-white/10 dark:bg-neutral-900/30 rounded-2xl border-white/10'
         >
           <h2 className='text-2xl font-extrabold tracking-tight md:text-4xl text-neutral-900 dark:text-white'>
@@ -289,8 +289,8 @@ export function About() {
       </div>
 
       {/* SKILLS SECTION */}
-      <section className='relative w-full px-6 mx-auto mt-20 mb-40 overflow-visible max-w-7xl sm:mt-28'>
-        <motion.h2 className='text-3xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
+      <section className='relative w-full mx-auto mb-40 overflow-visible mt-18 max-w-7xl sm:mt-28'>
+        <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
           My{' '}
           <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
             Skills
