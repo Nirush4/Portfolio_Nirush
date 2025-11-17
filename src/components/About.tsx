@@ -289,7 +289,7 @@ export function About() {
       </div>
 
       {/* SKILLS SECTION */}
-      <section className='relative w-full mx-auto mb-40 overflow-visible mt-18 max-w-7xl sm:mt-28'>
+      <section className='relative w-full mx-auto mb-40 overflow-visible mt-15 max-w-7xl sm:mt-28'>
         <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
           My{' '}
           <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
