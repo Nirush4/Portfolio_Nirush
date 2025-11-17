@@ -211,6 +211,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
+  mix-blend-mode: normal !important;
 }
 
 .pc-contact-btn:hover {

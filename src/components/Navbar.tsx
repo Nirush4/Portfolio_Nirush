@@ -61,7 +61,7 @@ export function Navbar() {
           </li>
         </ul>
 
-        {/* Contact Button */}
+        {/* Desktop Contact */}
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
@@ -71,25 +71,31 @@ export function Navbar() {
           Let’s Talk
         </motion.a>
 
-        {/* Mobile Toggle */}
-        <button
-          className='inline-flex items-center justify-center w-10 h-10 transition-all border rounded-lg cursor-pointer text-neutral-800 dark:text-neutral-200 border-neutral-200/30 dark:border-neutral-800/80 backdrop-blur-sm md:hidden hover:bg-neutral-100/20 dark:hover:bg-neutral-800/40'
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label='Toggle navigation'
-          aria-expanded={mobileOpen}
-        >
-          <motion.div
-            initial={false}
-            animate={mobileOpen ? { rotate: 90 } : { rotate: 0 }}
-            transition={{ duration: 0.3 }}
-            className='text-2xl font-medium leading-none'
+        {/* RIGHT SIDE (Mobile) */}
+        <div className='flex items-center gap-3 md:hidden'>
+          {/* Mobile Light/Dark Toggle */}
+          <ThemeToggle />
+
+          {/* Mobile Hamburger */}
+          <button
+            className='inline-flex items-center justify-center w-10 h-10 transition-all border rounded-lg cursor-pointer text-neutral-800 dark:text-neutral-200 border-neutral-200/30 dark:border-neutral-800/80 backdrop-blur-sm hover:bg-neutral-100/20 dark:hover:bg-neutral-800/40'
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label='Toggle navigation'
+            aria-expanded={mobileOpen}
           >
-            ☰
-          </motion.div>
-        </button>
+            <motion.div
+              initial={false}
+              animate={mobileOpen ? { rotate: 90 } : { rotate: 0 }}
+              transition={{ duration: 0.3 }}
+              className='text-2xl font-medium leading-none'
+            >
+              ☰
+            </motion.div>
+          </button>
+        </div>
       </nav>
 
-      {/* Mobile Menu — Premium Style */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -119,6 +125,8 @@ export function Navbar() {
                   <span className='absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-300 group-hover:w-full rounded-full'></span>
                 </motion.li>
               ))}
+
+              {/* Toggle inside mobile menu */}
               <motion.li
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -126,6 +134,7 @@ export function Navbar() {
               >
                 <ThemeToggle />
               </motion.li>
+
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}

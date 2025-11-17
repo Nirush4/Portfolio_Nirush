@@ -18,7 +18,7 @@ export function Hero() {
         />
 
         <div className='absolute inset-0 z-10 flex items-center justify-center pointer-events-none sm:hidden'>
-          <span className='text-sm font-semibold pointer-events-none select-none text-neutral-200/40 drop-shadow-md'>
+          <span className='text-sm font-semibold text-gray-300 pointer-events-none select-none drop-shadow-md dark:text-neutral-200/40'>
             Tap
           </span>
         </div>
