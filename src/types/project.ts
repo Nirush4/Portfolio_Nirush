@@ -1,9 +1,17 @@
-// types/project.ts
-export type Project = {
+export interface Feature {
   title: string;
   description: string;
-  tech: string[];
-  url: string;
-  image?: string;
-  tag?: string;
-};
+}
+
+export interface Project {
+  id: number;
+  name: string;
+  description: string;
+  story: string[];
+  features: Feature[];
+  technologies: string[];
+  github: string;
+  live: string;
+  thumbnail: string;
+  screenshots: string[];
+}

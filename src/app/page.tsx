@@ -4,7 +4,7 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
-// import { Projects } from '../components/Projects';
+import Projects from '../components/Projects';
 // import { ContactForm } from '../components/ContactForm';
 import { Footer } from '../components/Footer';
 // import { Background } from '../components/Background';
@@ -23,6 +23,7 @@ export default function Page() {
           </div>
         </section>
         <About />
+        <Projects />
       </main>
       <Footer />
     </>
