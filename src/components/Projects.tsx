@@ -1,10 +1,13 @@
 // components/Projects.tsx
 import ProjectCard from './ProjectCard';
-import { projects } from '../data/projects';
+import { projects } from '../lib/projects';
 
 export default function Projects() {
   return (
-    <section className='flex flex-col items-center justify-center gap-8 px-6 mb-12 md:px-8'>
+    <section
+      id='projects'
+      className='flex flex-col items-center justify-center gap-8 px-6 mb-12 md:px-8'
+    >
       {/* Section Title */}
       <h2 className='mb-5 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
         Projects
