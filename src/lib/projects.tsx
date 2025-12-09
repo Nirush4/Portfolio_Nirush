@@ -180,7 +180,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    name: 'The Community Science Museum',
+    name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',
     story: [

@@ -7,13 +7,15 @@ import { About } from '../components/About';
 import Projects from '../components/Projects';
 // import { ContactForm } from '../components/ContactForm';
 import { Footer } from '../components/Footer';
+import TimelineDemo from '@/components/Experience';
+
 // import { Background } from '../components/Background';
 
 export default function Page() {
   return (
     <>
       <Navbar />
-      <main className='relative overflow-x-hidden'>
+      <main className='relative'>
         <section
           id='home'
           className='flex items-center sm:min-h-screen min-h-[85dvh]'
@@ -24,6 +26,7 @@ export default function Page() {
         </section>
         <About />
         <Projects />
+        <TimelineDemo />
       </main>
       <Footer />
     </>

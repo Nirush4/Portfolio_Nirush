@@ -46,10 +46,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
           {/* Info */}
           <div className='p-6 space-y-3'>
-            <h3 className='text-xl font-bold text-transparent text-white bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text'>
+            <h3 className='text-xl font-bold text-transparenttext-neutral-700 dark:text-neutral-300'>
               {project?.name}
             </h3>
-            <p className='text-sm text-white/80'>{project?.description}</p>
+            <p className='text-sm text-neutral-700 dark:text-neutral-300'>
+              {project?.description}
+            </p>
           </div>
         </motion.div>
       </Tilt>

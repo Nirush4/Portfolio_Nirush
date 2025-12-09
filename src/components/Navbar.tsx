@@ -34,7 +34,7 @@ export function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className='container relative flex items-center justify-between h-16 px-6 mx-auto md:px-10 md:h-20'>
+      <nav className='container relative flex items-center justify-between h-16 px-6 mx-auto md:h-20'>
         {/* Brand */}
         <Link
           href='#home'
