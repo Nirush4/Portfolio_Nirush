@@ -173,7 +173,7 @@ export function About() {
   return (
     <section
       id='about'
-      className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:mt-10'
+      className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:px-8 md:mt-10'
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
@@ -182,7 +182,7 @@ export function About() {
       </div>
 
       {/* Main Content */}
-      <div className='relative z-10 grid items-center justify-center w-full gap-12 py-20 mx-auto max-w-7xl md:grid-cols-12'>
+      <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-22 max-w-7xl md:grid-cols-12'>
         {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
@@ -289,7 +289,7 @@ export function About() {
       </div>
 
       {/* SKILLS SECTION */}
-      <section className='relative w-full mx-auto mb-40 overflow-visible mt-15 max-w-7xl sm:mt-28'>
+      <section className='relative w-full mx-auto mb-40 overflow-visible mt-15 max-w-7xl sm:mt-25'>
         <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
           My{' '}
           <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>

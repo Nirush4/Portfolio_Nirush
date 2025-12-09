@@ -62,7 +62,52 @@ export default function ProjectModal({
                   className='object-contain'
                 />
               </div>
+              <div className='flex flex-wrap justify-between gap-2 p-6 space-y-6 align-middle techandlinks'>
+                {/* Technologies */}
+                <div className='mb-0'>
+                  <h3 className='mb-2 text-base font-semibold text-gray-900 sm:text-lg dark:text-white'>
+                    Technologies
+                  </h3>
+                  <div className='flex flex-wrap gap-3'>
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className='px-2 py-1 text-sm text-white bg-gray-700 rounded shadow-lg sm:text-base sm:rounded-lg sm:px-4 sm:py-2'
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
+                {/* Links */}
+                <div className='flex flex-wrap items-end gap-4'>
+                  {project.github && (
+                    <motion.a
+                      href={project.github}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className='flex items-center gap-2 px-3 py-1 text-sm font-semibold text-white transition bg-gray-900 rounded shadow-md sm:rounded-lg sm:text-base h-fit sm:py-2 sm:px-5 dark:bg-white/90 dark:text-gray-900 hover:bg-gray-800'
+                    >
+                      <FaGithub /> GitHub
+                    </motion.a>
+                  )}
+                  {project.live && (
+                    <motion.a
+                      href={project.live}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className='flex items-center gap-2 px-3 py-1 text-sm font-semibold text-white transition rounded shadow-md sm:test-base sm:rounded-lg h-fit sm:px-5 sm:py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:brightness-110'
+                    >
+                      <FaExternalLinkAlt /> Live
+                    </motion.a>
+                  )}
+                </div>
+              </div>
               {/* Text Section */}
               <div className='p-6 space-y-6'>
                 <h2 className='text-lg font-bold text-gray-900 sm:text-xl md:text-3xl dark:text-white'>
@@ -84,7 +129,7 @@ export default function ProjectModal({
 
                 {project.features.length > 0 && (
                   <div>
-                    <h3 className='mb-2 text-base font-semibold text-gray-900 sm:text-lg dark:text-white'>
+                    <h3 className='mb-2 text-base font-semibold font-bold text-gray-900 sm:text-lg dark:text-white'>
                       Key Features
                     </h3>
                     <ul className='pl-5 space-y-2 text-sm text-gray-700 list-disc sm:text-base dark:text-gray-300'>
@@ -99,51 +144,6 @@ export default function ProjectModal({
                     </ul>
                   </div>
                 )}
-
-                {/* Technologies */}
-                <div className='mt-4'>
-                  <h3 className='mb-2 text-base font-semibold text-gray-900 sm:text-lg dark:text-white'>
-                    Technologies
-                  </h3>
-                  <div className='flex flex-wrap gap-3'>
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className='px-2 py-1 text-sm font-bold text-white rounded shadow-lg sm:rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-500 to-indigo-500'
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Links */}
-                <div className='flex flex-wrap gap-4 mt-6'>
-                  {project.github && (
-                    <motion.a
-                      href={project.github}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      className='flex items-center gap-2 px-3 py-1 font-semibold text-white transition bg-gray-900 rounded-lg shadow-md sm:py-2 sm:px-5 dark:bg-white/90 dark:text-gray-900 hover:bg-gray-800'
-                    >
-                      <FaGithub /> GitHub
-                    </motion.a>
-                  )}
-                  {project.live && (
-                    <motion.a
-                      href={project.live}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      className='flex items-center gap-2 px-3 py-1 font-semibold text-white transition rounded-lg shadow-md sm:px-5 sm:py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:brightness-110'
-                    >
-                      <FaExternalLinkAlt /> Live
-                    </motion.a>
-                  )}
-                </div>
               </div>
             </div>
           </motion.div>

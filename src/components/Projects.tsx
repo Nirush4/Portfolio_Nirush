@@ -19,7 +19,7 @@ export default function Projects() {
       </p>
 
       {/* Project Cards Grid */}
-      <div className='grid w-full max-w-6xl grid-cols-1 gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center'>
+      <div className='grid w-full grid-cols-1 gap-6 mt-10 max-w-7xl sm:grid-cols-2 lg:grid-cols-3 justify-items-center'>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
