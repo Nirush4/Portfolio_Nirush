@@ -20,6 +20,7 @@ html {
 
 /* Optional: basic light/dark surface text defaults */
 :root {
+  --font-clash: var(--font-clash);
   --bg: 255 255 255;
   --fg: 17 24 39;
   --radius: 0.625rem;

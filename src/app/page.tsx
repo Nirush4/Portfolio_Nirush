@@ -8,8 +8,7 @@ import Projects from '../components/Projects';
 // import { ContactForm } from '../components/ContactForm';
 import { Footer } from '../components/Footer';
 import TimelineDemo from '@/components/Experience';
-
-// import { Background } from '../components/Background';
+import HonorsAwards from '@/components/HonorsAwards';
 
 export default function Page() {
   return (
@@ -27,6 +26,7 @@ export default function Page() {
         <About />
         <Projects />
         <TimelineDemo />
+        <HonorsAwards />
       </main>
       <Footer />
     </>
