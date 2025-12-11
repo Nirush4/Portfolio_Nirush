@@ -29,7 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className='relative w-full px-6 mb-12 font-sans md:px-8'
+      className='relative w-full px-6 mb-0 font-sans sm:mb-12 md:px-8'
       ref={containerRef}
     >
       {/* Background Glow */}
@@ -37,7 +37,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
-      <div className='px-4 py-20 mx-auto max-w-7xl md:px-8 lg:px-10'>
+      <div className='px-4 py-10 mx-auto sm:py-30 max-w-7xl md:px-8 lg:px-10'>
         <h2 className='max-w-4xl mb-4 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
           Behind the Scenes of My Aceternity Journey
         </h2>
@@ -49,11 +49,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </p>
       </div>
 
-      <div ref={ref} className='relative pb-20 mx-auto max-w-7xl'>
+      <div ref={ref} className='relative pb-10 mx-auto sm:pb-10 max-w-7xl'>
         {data.map((item, index) => (
           <div
             key={index}
-            className='flex justify-start pt-10 md:pt-40 md:gap-10'
+            className='flex justify-start pt-10 md:pt-10 md:gap-10'
           >
             <div className='sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full'>
               <div className='absolute flex items-center justify-center w-10 h-10 bg-white rounded-full left-3 md:left-3 dark:bg-black'>

@@ -95,7 +95,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
-            Senior Grafisk Designer
+            Senior Graphic Designer
           </h3>
           <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
             Halo Flights – Halo Group of Companies
@@ -190,7 +190,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
-            Grafisk Designer
+            Graphic Designer
           </h3>
           <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
             DVSP Multi Service and Trading
@@ -279,7 +279,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
-            Grafisk Designer
+            Graphic Designer
           </h3>
           <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
             Malaysian Excellence Media Sdn. Bhd
@@ -354,7 +354,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
-            Grafisk Designer
+            Graphic Designer
           </h3>
           <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
             Malaysian Hub Sdn. Bhd

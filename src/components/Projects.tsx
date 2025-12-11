@@ -9,7 +9,7 @@ export default function Projects() {
       className='flex flex-col items-center justify-center gap-8 px-6 mb-12 md:px-8'
     >
       {/* Section Title */}
-      <h2 className='mb-5 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+      <h2 className='mb-5 text-2xl font-extrabold text-transparent sm:text-3xl md:text-5xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
         Projects
       </h2>
 
