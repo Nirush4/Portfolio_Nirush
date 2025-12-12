@@ -28,7 +28,7 @@ export function GradientSlideButton({
         } as React.CSSProperties
       }
       className={cn(
-        'relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-md bg-black py-2  px-3 sm:px-5 text-sm sm:text-base font-medium whitespace-nowrap text-white transition-all duration-300 hover:scale-[105%] dark:bg-white dark:text-black hover:dark:text-white',
+        'relative inline-flex transition-colors items-center justify-center gap-2 overflow-hidden rounded-md bg-black py-2  px-3 sm:px-5 text-sm sm:text-base font-medium whitespace-nowrap text-white transition-all duration-300 hover:scale-[105%] dark:bg-white dark:text-black hover:dark:text-white',
         'before:absolute before:top-0 before:left-[-100%] before:h-full before:w-full before:rounded-[inherit] before:bg-gradient-to-l before:from-[var(--color-from)] before:to-[var(--color-to)] before:transition-all before:duration-200',
         'hover:text-white hover:before:left-0',
         className

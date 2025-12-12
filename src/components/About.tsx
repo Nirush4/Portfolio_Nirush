@@ -189,11 +189,11 @@ export function About() {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
-          className='flex flex-col items-center justify-center order-2 p-8 space-y-8 text-center border shadow-xl md:order-1 md:col-span-7 md:items-start md:text-left backdrop-blur-md bg-white/10 dark:bg-neutral-900/30 rounded-2xl border-white/10'
+          className='flex flex-col items-center justify-center order-2 p-8 space-y-8 text-center transition-colors border shadow-xl md:order-1 md:col-span-7 md:items-start md:text-left backdrop-blur-md bg-white/10 dark:bg-neutral-900/30 rounded-2xl border-white/10'
         >
-          <h2 className='text-2xl font-extrabold tracking-tight md:text-4xl text-neutral-900 dark:text-white'>
+          <h2 className='text-2xl font-extrabold tracking-tight text-gray-800 transition-colors md:text-4xl dark:text-white'>
             About{' '}
-            <span className='text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>
+            <span className='text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
               Me
             </span>
           </h2>
@@ -202,10 +202,10 @@ export function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className='max-w-xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300'
+            className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
             I’m{' '}
-            <span className='font-semibold text-indigo-600 dark:text-indigo-400'>
+            <span className='font-semibold text-indigo-600 transition-colors dark:text-indigo-400'>
               Nirushan Rajamanoharan
             </span>
             , a Frontend Developer and former Graphic Designer based in Oslo,
@@ -217,7 +217,7 @@ export function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className='max-w-xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300'
+            className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
             Currently studying <strong>Frontend Development</strong> at Noroff
             School of Technology and Digital Media (graduating 2026), I’m
@@ -235,7 +235,7 @@ export function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className='max-w-xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300'
+            className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
             My eight-year background as a <strong>Graphic Designer</strong>{' '}
             gives me a unique eye for UI/UX, accessibility, and the harmony
@@ -289,15 +289,15 @@ export function About() {
       </div>
 
       {/* SKILLS SECTION */}
-      <section className='relative w-full mx-auto mb-40 overflow-visible mt-15 max-w-7xl sm:mt-20'>
-        <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-white md:text-4xl'>
+      <section className='relative w-full mx-auto mb-20 overflow-visible max-w-7xl sm:mt-20'>
+        <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-gray-800 transition-colors dark:text-white md:text-4xl'>
           My{' '}
-          <span className='text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+          <span className='text-transparent bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text'>
             Skills
           </span>
         </motion.h2>
 
-        <motion.p className='max-w-2xl mx-auto mt-5 text-base text-center text-neutral-700 dark:text-neutral-300 md:text-lg'>
+        <motion.p className='max-w-2xl mx-auto mt-5 text-base text-center transition-colors text-neutral-700 dark:text-neutral-300 md:text-lg'>
           Technologies I use to build immersive and high-performance digital
           experiences.
         </motion.p>
@@ -305,7 +305,7 @@ export function About() {
         <div className='relative flex items-center justify-center mt-10 overflow-visible sm:mt-20'>
           <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
 
-          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden'>
+          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 transition-colors transition-colors dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden'>
             {/* LINE 1 */}
             <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform mb-10'>
               <LogoLoop

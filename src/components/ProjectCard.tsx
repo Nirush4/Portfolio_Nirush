@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         <motion.div
           onClick={() => setIsModalOpen(true)}
-          className='relative flex flex-col overflow-hidden bg-white border shadow-xl cursor-pointer rounded-3xl border-white/10 dark:bg-gray-900 group'
+          className='relative flex flex-col overflow-hidden transition-colors bg-white border shadow-xl cursor-pointer rounded-3xl border-white/10 dark:bg-gray-900 group'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -46,10 +46,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
           {/* Info */}
           <div className='p-6 space-y-3'>
-            <h3 className='text-xl font-bold text-transparenttext-neutral-700 dark:text-neutral-300'>
+            <h3 className='text-xl font-bold transition-colors text-transparenttext-neutral-700 dark:text-neutral-300'>
               {project?.name}
             </h3>
-            <p className='text-sm text-neutral-700 dark:text-neutral-300'>
+            <p className='text-sm transition-colors text-neutral-700 dark:text-neutral-300'>
               {project?.description}
             </p>
           </div>

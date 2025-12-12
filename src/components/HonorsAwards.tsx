@@ -13,7 +13,16 @@ export default function HonorsAwards() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <section className='py-14 sm:py-10 '>
+    <section
+      id='honors-awards'
+      className='relative py-14 sm:py-25 overflow-x-hidden'
+    >
+      {/* Background Glow */}
+      <div className='absolute inset-0 pointer-events-none -z-10'>
+        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
+        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+      </div>
+
       {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -83,16 +92,16 @@ export default function HonorsAwards() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='relative order-2 w-full p-8 transition-transform border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-neutral-900/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
+          className='relative order-2 w-full p-8 transition-all border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-black/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
         >
           <div className='absolute w-12 h-12 rounded-full -top-6 -left-6 bg-gradient-to-tr from-blue-400 to-purple-500 animate-pulse'></div>
 
-          <h3 className='flex items-center gap-3 mb-4 text-base font-bold sm:text-2xl sm:text-3xl'>
+          <h3 className='flex items-center gap-3 mb-4 text-base font-bold sm:text-2xl'>
             <span className='text-4xl animate-bounce'>🏆</span>
             Best Student Work in Front-End Development
           </h3>
 
-          <p className='mb-4 text-base font-medium text-transparent sm:mb-10 sm:text-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+          <p className='mb-4 text-base font-medium text-transparent sm:mb-10 sm:text-xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
             Golden Egg 2025 · Noroff
           </p>
 
@@ -113,7 +122,7 @@ export default function HonorsAwards() {
 
           <p className='font-semibold text-gray-800 dark:text-gray-200'>
             Year:{' '}
-            <span className='font-bold text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+            <span className='font-bold text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
               2025
             </span>
           </p>

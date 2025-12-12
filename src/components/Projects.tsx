@@ -6,10 +6,16 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='flex flex-col items-center justify-center gap-8 px-6 mb-12 md:px-8'
+      className='relative flex flex-col items-center justify-center gap-8 px-6 mb-12 overflow-x-hidden sm:mt-15 md:px-8'
     >
+      {/* Background Glow */}
+      <div className='absolute inset-0 pointer-events-none -z-10'>
+        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
+        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+      </div>
+
       {/* Section Title */}
-      <h2 className='mb-5 text-2xl font-extrabold text-transparent sm:text-3xl md:text-5xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+      <h2 className='text-2xl font-extrabold text-transparent sm:text-3xl md:text-5xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
         Projects
       </h2>
 

@@ -45,7 +45,7 @@ export default function ProjectModal({
               onClick={onClose}
               whileHover={{ scale: 1.2, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
-              className='absolute z-20 text-white transition cursor-pointer top-4 right-4 hover:text-purple-400'
+              className='absolute z-20 text-black transition cursor-pointer top-4 right-4 hover:text-purple-400'
             >
               <FaTimes size={28} />
             </motion.button>
