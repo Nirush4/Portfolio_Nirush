@@ -7,50 +7,50 @@ export default function TimelineDemo() {
       title: '2024 - Present',
       content: (
         <div>
-          <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-base font-bold transition-colors md:text-2xl text-neutral-700 dark:text-gray-200'>
             Front-end Developer (Student)
           </h3>
-          <h3 className='mb-2 text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+          <h3 className='mb-2 text-sm transition-colors md:text-base text-neutral-700 dark:text-gray-200'>
             Noroff Oslo
           </h3>
-          <div className='mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200'>
-            <p className='text-sm font-bold md:text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          <div className='mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold transition-colors md:text-lg text-neutral-700 dark:text-gray-200'>
               Responsibilities & Tasks:
             </p>
             <ul className='mt-2 ml-5 list-disc'>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Developed responsive web applications using HTML, CSS, and
                 JavaScript
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Built interactive UI components and implemented user-friendly
                 interfaces
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Worked on **React** and **Next.js** projects, exploring
                 component-based architecture
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Implemented projects using **TypeScript** for type safety and
                 maintainability
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Collaborated on team projects, following agile/scrum workflows
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Integrated APIs and handled data dynamically in web applications
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Conducted cross-browser testing to ensure consistent performance
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Used testing tools like **Vitest, Playwright, and Cypress** to
                 ensure code quality
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Learned and applied version control using Git and GitHub
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Participated in peer code reviews and improved code quality
                 through feedback
               </li>
@@ -94,10 +94,10 @@ export default function TimelineDemo() {
       title: 'January 2022 - August 2023',
       content: (
         <div>
-          <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-base font-bold text-gray-600 transition-colors md:text-2xl dark:text-gray-200'>
             Senior Graphic Designer
           </h3>
-          <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-sm text-gray-600 transition-colors md:text-base dark:text-gray-200'>
             Halo Flights – Halo Group of Companies
           </h3>
           <a
@@ -107,45 +107,45 @@ export default function TimelineDemo() {
           >
             https://www.haloflights.co.uk/
           </a>
-          <div className='mt-2 mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200'>
-            <p className='text-sm font-bold md:text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          <div className='mt-2 mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold text-gray-600 transition-colors md:text-lg dark:text-gray-200'>
               Responsibilities & Tasks:
             </p>
             <ul className='mt-2 ml-5 list-disc'>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Lead the visual design strategy for projects, ensuring alignment
                 with brand identity and marketing goals.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Mentor junior designers and provide constructive feedback to
                 elevate team design quality.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Develop innovative design concepts for digital, print, social
                 media, and advertising campaigns. projects, exploring
                 component-based architecture
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Develop innovative design concepts for digital, print, social
                 media, and advertising campaigns.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Manage multiple design projects simultaneously, ensuring timely
                 delivery without compromising quality.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Collaborate with project managers, marketers, copywriters, and
                 developers to meet project objectives.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Maintain and evolve brand guidelines across all visual assets
                 and communications.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Work on UI/UX design for websites, apps, and interactive
                 platforms, ensuring intuitive and engaging user experiences.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Review all visual content for accuracy, consistency, and
                 high-quality standards before delivery.
               </li>
@@ -189,52 +189,52 @@ export default function TimelineDemo() {
       title: '2019 - 2021',
       content: (
         <div>
-          <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-base font-bold text-gray-600 transition-colors md:text-2xl dark:text-gray-200'>
             Graphic Designer
           </h3>
-          <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-sm text-gray-600 transition-colors md:text-base dark:text-gray-200'>
             DVSP Multi Service and Trading
           </h3>
-          <div className='mt-2 mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200'>
-            <p className='text-sm font-bold md:text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          <div className='mt-2 mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold text-gray-600 transition-colors md:text-lg dark:text-gray-200'>
               Responsibilities & Tasks:
             </p>
             <ul className='mt-2 ml-5 list-disc'>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Develop visually appealing graphics for digital and print media,
                 including social media posts, websites, brochures, banners,
                 presentations, and marketing materials.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Transform ideas and concepts into compelling designs that
                 communicate the intended message effectively.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Ensure all designs align with brand guidelines and maintain a
                 consistent look and feel across all platforms.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Update and maintain visual assets in line with the company’s
                 branding strategy.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Work closely with marketing, content, and product teams to
                 understand project requirements and deliver high-quality design
                 solutions.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Participate in brainstorming sessions and provide creative input
                 to enhance campaigns and projects.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Manage multiple design projects from concept to completion,
                 meeting deadlines and quality standards.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Propose new ideas and creative solutions for campaigns, social
                 media, and branding initiatives.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Make revisions based on feedback while ensuring the design
                 integrity remains intact.
               </li>
@@ -278,52 +278,52 @@ export default function TimelineDemo() {
       title: '2017 - 2019',
       content: (
         <div>
-          <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-base font-bold text-gray-600 transition-colors md:text-2xl dark:text-gray-200'>
             Graphic Designer
           </h3>
-          <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-sm text-gray-600 transition-colors md:text-base dark:text-gray-200'>
             Malaysian Excellence Media Sdn. Bhd
           </h3>
-          <div className='mt-2 mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200'>
-            <p className='text-sm font-bold md:text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          <div className='mt-2 mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold text-gray-600 transition-colors md:text-lg dark:text-gray-200'>
               Responsibilities & Tasks:
             </p>
             <ul className='mt-2 ml-5 list-disc'>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Create engaging and visually compelling graphics for digital and
                 print platforms, including social media, websites, brochures,
                 presentations, and marketing campaigns.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Translate concepts and ideas into innovative designs that
                 effectively convey the intended message.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Maintain brand consistency across all visual materials and
                 ensure adherence to brand guidelines.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Refresh and manage visual assets to support ongoing marketing
                 and branding initiatives.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Collaborate with marketing, content, and product teams to
                 understand requirements and deliver high-quality designs.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Contribute creative ideas in brainstorming sessions to elevate
                 campaigns and projects.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Handle multiple design projects simultaneously, from concept
                 through completion, ensuring timely delivery and quality
                 standards.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
                 Suggest innovative solutions for campaigns, social media
                 content, and brand identity development.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Incorporate feedback and make revisions while preserving design
                 quality and integrity.
               </li>
@@ -353,40 +353,40 @@ export default function TimelineDemo() {
       title: '2014 - 2017',
       content: (
         <div>
-          <h3 className='text-base font-bold md:text-2xl text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-base font-bold transition-colors md:text-2xl text-neutral-700 dark:text-gray-200'>
             Graphic Designer
           </h3>
-          <h3 className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+          <h3 className='text-sm transition-colors md:text-base text-neutral-700 dark:text-gray-200'>
             Malaysian Hub Sdn. Bhd
           </h3>
-          <div className='mt-2 mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200'>
-            <p className='text-sm font-bold md:text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          <div className='mt-2 mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold transition-colors md:text-lg text-neutral-700 dark:text-gray-200'>
               Responsibilities & Tasks:
             </p>
             <ul className='mt-2 ml-5 list-disc'>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Designed creative and visually appealing graphics for both
                 digital and print media, including social posts, website
                 visuals, brochures, presentations, and marketing materials.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Turned ideas and concepts into effective designs that
                 communicated messages clearly to target audiences.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Ensured all designs adhered to brand guidelines, maintaining a
                 consistent and professional visual identity across platforms.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Updated and organized visual assets to support ongoing marketing
                 campaigns and branding strategies.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Collaborated closely with marketing, content, and product teams
                 to understand project goals and deliver high-quality design
                 solutions.
               </li>
-              <li className='text-sm sm:text-base text-neutral-700 dark:text-neutral-300'>
+              <li className='text-sm transition-colors sm:text-base text-neutral-700 dark:text-gray-200'>
                 Contributed creative ideas during team brainstorming sessions to
                 enhance campaigns and projects.
               </li>

@@ -66,7 +66,7 @@ export function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
           href='#contact'
-          className='items-center justify-center hidden px-5 py-2 text-sm font-medium text-white transition-all rounded-full shadow-md md:inline-flex bg-gradient-to-r from-indigo-500 to-pink-500 hover:shadow-lg'
+          className='items-center justify-center hidden px-5 py-2 text-sm font-medium text-white transition-all rounded-full shadow-md md:inline-flex bg-gradient-to-r from-indigo-500 to-purple-600 hover:shadow-lg'
         >
           Let’s Talk
         </motion.a>

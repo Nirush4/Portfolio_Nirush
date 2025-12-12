@@ -13,7 +13,7 @@ export default function HonorsAwards() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <section className='py-14 sm:py-10 '>
+    <section className='py-14 sm:pt-10 sm:pb-20'>
       {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export default function HonorsAwards() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='relative order-2 w-full p-8 transition-transform border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-neutral-900/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
+          className='relative order-2 w-full p-8 transition-transform border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-black/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
         >
           <div className='absolute w-12 h-12 rounded-full -top-6 -left-6 bg-gradient-to-tr from-blue-400 to-purple-500 animate-pulse'></div>
 
@@ -92,7 +92,7 @@ export default function HonorsAwards() {
             Best Student Work in Front-End Development
           </h3>
 
-          <p className='mb-4 text-base font-medium text-transparent sm:mb-10 sm:text-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+          <p className='mb-4 text-base font-medium text-transparent sm:mb-10 sm:text-xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
             Golden Egg 2025 · Noroff
           </p>
 
@@ -113,7 +113,7 @@ export default function HonorsAwards() {
 
           <p className='font-semibold text-gray-800 dark:text-gray-200'>
             Year:{' '}
-            <span className='font-bold text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+            <span className='font-bold text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
               2025
             </span>
           </p>

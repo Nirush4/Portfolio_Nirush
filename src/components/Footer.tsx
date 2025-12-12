@@ -4,9 +4,9 @@ export function Footer() {
 
   return (
     <footer className='border-t border-white/10'>
-      <div className='container flex flex-col items-center justify-between px-6 py-10 mx-auto text-sm md:px-8 text-neutral-400'>
-        <div className='w-full pt-4 mt-8 text-center border-t border-gray-200'>
-          <p className='text-sm text-gray-500'>
+      <div className='container flex flex-col items-center justify-between px-6 mx-auto text-sm py-7 sm:py-10 md:px-8 text-neutral-400'>
+        <div className='w-full pt-8 mt-4 text-center border-t border-gray-200 sm:mt-8'>
+          <p className='text-sm text-gray-600 dark:text-gray-400'>
             &copy; {year} All rights reserved. Made with ❤️ by{' '}
             <a
               href='https://www.linkedin.com/in/nirushan-rajamanoharan/'

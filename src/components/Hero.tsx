@@ -19,7 +19,7 @@ export function Hero() {
         />
 
         <div className='absolute inset-0 z-10 flex items-center justify-center pointer-events-none sm:hidden'>
-          <span className='text-sm font-semibold text-gray-300 pointer-events-none select-none drop-shadow-md dark:text-neutral-200/40'>
+          <span className='text-sm font-semibold text-gray-300 transition-colors pointer-events-none select-none drop-shadow-mddark:text-neutral-200/40'>
             Tap
           </span>
         </div>
@@ -33,7 +33,7 @@ export function Hero() {
         className='relative z-10 flex flex-col items-center justify-center w-full px-4 text-center md:w-fit sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2'
       >
         <h1
-          className={`text-gray-700 dark:text-white leading-[1.15] ${clashDisplay.className} mx-auto`}
+          className={`text-gray-700 dark:text-white transition-colors leading-[1.15] ${clashDisplay.className} mx-auto`}
         >
           {/* Intro Name */}
           <span className='block mb-2 text-sm font-medium tracking-wide sm:text-lg md:text-2xl opacity-80'>

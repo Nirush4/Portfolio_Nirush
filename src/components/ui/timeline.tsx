@@ -37,11 +37,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
-      <div className='px-4 py-10 mx-auto sm:py-30 max-w-7xl md:px-8 lg:px-10'>
-        <h2 className='max-w-4xl mb-4 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+      <div className='px-4 pt-10 mx-auto sm:pt-25 max-w-7xl'>
+        <h2 className='max-w-4xl mb-4 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
           Behind the Scenes of My Aceternity Journey
         </h2>
-        <p className='text-sm md:text-base text-neutral-700 dark:text-neutral-300'>
+        <p className='text-sm transition-colors md:text-base text-neutral-700 dark:text-neutral-300'>
           I have 8+ years of experience as a graphic designer and am currently
           in my final year of a Front-end Development degree at Noroff, Oslo.
           This blend of design and development skills enables me to create
@@ -49,23 +49,23 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </p>
       </div>
 
-      <div ref={ref} className='relative pb-10 mx-auto sm:pb-10 max-w-7xl'>
+      <div ref={ref} className='relative mx-auto max-w-7xl'>
         {data.map((item, index) => (
           <div
             key={index}
-            className='flex justify-start pt-10 md:pt-10 md:gap-10'
+            className='flex justify-start mt-10 sm:mt-20 md:gap-10'
           >
             <div className='sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full'>
               <div className='absolute flex items-center justify-center w-10 h-10 bg-white rounded-full left-3 md:left-3 dark:bg-black'>
                 <div className='w-4 h-4 p-2 border rounded-full bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700' />
               </div>
-              <h3 className='hidden text-xl font-bold text-transparent md:block md:pl-20 md:text-4xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'>
+              <h3 className='hidden text-xl font-bold text-transparent md:block md:pl-20 md:text-4xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
                 {item.title}
               </h3>
             </div>
 
             <div className='relative w-full pl-20 pr-4 md:pl-4'>
-              <h3 className='block mb-4 text-lg font-bold text-left md:text-2xl md:hidden text-neutral-500 dark:text-neutral-500'>
+              <h3 className='block mb-4 text-lg font-bold text-left md:text-2xl md:hidden text-neutral-600 dark:text-neutral-400'>
                 {item.title}
               </h3>
               {item.content}{' '}

@@ -74,7 +74,7 @@
       hsla(266, 0%, 60%, 0) 100%),
     radial-gradient(35% 52% at 55% 20%, #2e2e2e 0%, #073aff00 100%),
     radial-gradient(100% 100% at 50% 50%, #2e2e2e 1%, #073aff00 76%),
-    conic-gradient(from 124deg at 50% 50%, #3b82f6 0%, #2e2e2e 25%, #ec4899 50%, #2e2e2e 75%, #3b82f6 100%);
+    conic-gradient(from 124deg at 50% 50%, #3b82f6 0%, #2e2e2e 25%, #818CF8 50%, #2e2e2e 75%, #3b82f6 100%);
   overflow: hidden;
 }
 
