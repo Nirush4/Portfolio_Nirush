@@ -13,7 +13,10 @@ export default function HonorsAwards() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <section id='honors-awards' className='relative py-14 sm:py-25'>
+    <section
+      id='honors-awards'
+      className='relative py-14 sm:py-25 overflow-x-hidden'
+    >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>

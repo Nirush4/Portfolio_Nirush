@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='relative flex flex-col items-center justify-center gap-8 px-6 mb-12 sm:mt-15 md:px-8'
+      className='relative flex flex-col items-center justify-center gap-8 px-6 mb-12 overflow-x-hidden sm:mt-15 md:px-8'
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
