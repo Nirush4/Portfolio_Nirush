@@ -143,7 +143,7 @@ export default function ContactSection() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
             disabled={isSubmitting}
-            className='w-full py-2 text-base text-white transition rounded-md cursor-pointer sm:rounded-lg sm:py-3 bg-gradient-to-r from-indigo-500 to-purple-600 sm:text-lg'
+            className='w-full py-2 text-base text-white transition rounded-md cursor-pointer sm:rounded-lg sm:py-3 bg-gradient-to-r from-indigo-500 to-purple-600'
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </motion.button>
@@ -151,7 +151,7 @@ export default function ContactSection() {
           {/* Result Message */}
           {resultMessage && (
             <p
-              className={`pt-4 text-center text-lg font-bold px-4 py-2 rounded-md ${
+              className={`pt-4 text-center text-base font-bold px-4 py-2 rounded-md ${
                 statusType === 'success'
                   ? 'bg-green-600 text-white border border-green-400'
                   : statusType === 'error'
