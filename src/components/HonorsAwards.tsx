@@ -13,7 +13,7 @@ export default function HonorsAwards() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <section className='py-14 sm:pt-10 sm:pb-20'>
+    <section className='py-14 sm:py-25'>
       {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -87,7 +87,7 @@ export default function HonorsAwards() {
         >
           <div className='absolute w-12 h-12 rounded-full -top-6 -left-6 bg-gradient-to-tr from-blue-400 to-purple-500 animate-pulse'></div>
 
-          <h3 className='flex items-center gap-3 mb-4 text-base font-bold sm:text-2xl sm:text-3xl'>
+          <h3 className='flex items-center gap-3 mb-4 text-base font-bold sm:text-2xl'>
             <span className='text-4xl animate-bounce'>🏆</span>
             Best Student Work in Front-End Development
           </h3>
