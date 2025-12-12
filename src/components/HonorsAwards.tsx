@@ -13,7 +13,13 @@ export default function HonorsAwards() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <section className='py-14 sm:py-25'>
+    <section id='honors-awards' className='relative py-14 sm:py-25'>
+      {/* Background Glow */}
+      <div className='absolute inset-0 pointer-events-none -z-10'>
+        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
+        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+      </div>
+
       {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -83,7 +89,7 @@ export default function HonorsAwards() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='relative order-2 w-full p-8 transition-transform border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-black/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
+          className='relative order-2 w-full p-8 transition-all border border-gray-200 shadow-xl md:w-3/5 bg-white/80 dark:bg-black/70 backdrop-blur-lg rounded-3xl md:p-10 dark:border-neutral-800 md:order-1'
         >
           <div className='absolute w-12 h-12 rounded-full -top-6 -left-6 bg-gradient-to-tr from-blue-400 to-purple-500 animate-pulse'></div>
 

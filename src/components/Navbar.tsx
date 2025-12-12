@@ -10,6 +10,7 @@ const links = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
+  { href: '#honors-awards', label: 'Honors & Awards' },
 ];
 
 export function Navbar() {
@@ -44,7 +45,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className='items-center hidden gap-8 md:flex'>
+        <ul className='items-center hidden gap-8 lg:flex'>
           {links.map((link) => (
             <li key={link.href} className='relative group'>
               <a
@@ -66,13 +67,13 @@ export function Navbar() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
           href='#contact'
-          className='items-center justify-center hidden px-5 py-2 text-sm font-medium text-white transition-all rounded-full shadow-md md:inline-flex bg-gradient-to-r from-indigo-500 to-purple-600 hover:shadow-lg'
+          className='items-center justify-center hidden px-5 py-2 text-sm font-medium text-white transition-all rounded-full shadow-md lg:inline-flex bg-gradient-to-r from-indigo-500 to-purple-600 hover:shadow-lg'
         >
           Let’s Talk
         </motion.a>
 
         {/* RIGHT SIDE (Mobile) */}
-        <div className='flex items-center gap-3 md:hidden'>
+        <div className='flex items-center gap-3 lg:hidden'>
           {/* Mobile Light/Dark Toggle */}
           <ThemeToggle />
 
@@ -104,7 +105,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.98 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            className='absolute inset-x-0 origin-top border-t shadow-lg top-full md:hidden backdrop-blur-2xl bg-gradient-to-br from-white/70 via-white/60 to-indigo-100/40 dark:from-neutral-950/80 dark:via-neutral-900/80 dark:to-indigo-950/40 border-white/10 rounded-b-3xl'
+            className='absolute inset-x-0 origin-top border-t shadow-lg top-full lg:hidden backdrop-blur-2xl bg-gradient-to-br from-white/70 via-white/60 to-indigo-100/40 dark:from-neutral-950/80 dark:via-neutral-900/80 dark:to-indigo-950/40 border-white/10 rounded-b-3xl'
           >
             <ul className='flex flex-col items-center justify-center gap-6 py-8'>
               {links.map((link, i) => (
@@ -146,7 +147,7 @@ export function Navbar() {
                 <a
                   href='#contact'
                   onClick={() => setMobileOpen(false)}
-                  className='inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full shadow-md hover:shadow-lg transition-all'
+                  className='inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full shadow-md hover:shadow-lg transition-all'
                 >
                   Let’s Talk
                 </a>
