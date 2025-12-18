@@ -1,4 +1,6 @@
-// components/Projects.tsx
+'use client';
+
+import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import { projects } from '../lib/projects';
 
@@ -6,30 +8,59 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='relative flex flex-col items-center justify-center gap-8 px-6 mb-12 overflow-x-hidden sm:mt-15 md:px-8'
+      className='relative flex flex-col items-center justify-center gap-8 px-6 py-24 overflow-hidden md:px-8'
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
-        <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
-        <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
+        <div className='absolute -left-40 top-1/3 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-indigo-500/30 to-purple-400/15 blur-3xl' />
+        <div className='absolute -right-40 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-r from-purple-400/25 to-indigo-400/20 blur-3xl' />
       </div>
 
-      {/* Section Title */}
-      <h2 className='text-2xl font-extrabold text-transparent sm:text-3xl md:text-5xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
-        Projects
-      </h2>
+      {/* Section Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className='text-center'
+      >
+        <h2 className='text-3xl font-extrabold text-transparent sm:text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600'>
+          Projects
+        </h2>
 
-      <p className='max-w-2xl text-base text-center md:text-lg text-neutral-700 dark:text-neutral-300'>
-        Here are some of the projects I&apos;ve worked on, showcasing a variety
-        of skills and technologies.
-      </p>
+        <p className='max-w-2xl mx-auto mt-4 text-base md:text-lg text-neutral-700 dark:text-neutral-300'>
+          Here are some of the projects I&apos;ve worked on, showcasing a
+          variety of skills and technologies.
+        </p>
+      </motion.div>
 
       {/* Project Cards Grid */}
-      <div className='grid w-full grid-cols-1 gap-6 mt-10 max-w-7xl sm:grid-cols-2 lg:grid-cols-3 justify-items-center'>
+      <motion.div
+        className='grid w-full grid-cols-1 gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3 justify-items-center'
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, margin: '-100px' }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: { staggerChildren: 0.15 },
+          },
+        }}
+      >
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <motion.div
+            key={project.id}
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              show: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className='flex justify-center'
+          >
+            <ProjectCard project={project} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

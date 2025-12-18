@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { PaperAirplaneIcon } from '@heroicons/react/24/solid';
 
 interface Web3FormsResponse {
   success: boolean;
@@ -77,8 +78,9 @@ export default function ContactSection() {
               Connect
             </span>
           </h2>
-          <p className='mt-2 text-base text-gray-600 dark:text-gray-400 sm:text-lg'>
-            Have a question? Want to collaborate? Drop me a message.
+          <p className='mt-2 text-sm text-gray-600 dark:text-gray-400 sm:text-base'>
+            Have a question? Want to collaborate? Drop me a message. I&apos;ll
+            get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -89,7 +91,7 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className='p-10 space-y-6 transition-colors duration-500 border border-gray-200 shadow-lg dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 rounded-2xl backdrop-blur-lg '
+          className='p-6 space-y-6 transition-colors duration-500 border border-gray-200 shadow-lg sm:p-10 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 rounded-2xl backdrop-blur-lg '
         >
           <input
             type='hidden'
@@ -143,9 +145,33 @@ export default function ContactSection() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
             disabled={isSubmitting}
-            className='w-full py-2 text-base text-white transition rounded-md cursor-pointer sm:rounded-lg sm:py-3 bg-gradient-to-r from-indigo-500 to-purple-600'
+            className='flex items-center justify-center w-full gap-2 py-2 text-base text-white transition rounded-md cursor-pointer sm:rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 disabled:opacity-70'
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? (
+              <>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth={2}
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  className='w-4 h-4 animate-pulse'
+                >
+                  <path d='M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z' />
+                  <path d='m21.854 2.147-10.94 10.939' />
+                </svg>
+                Sending...
+              </>
+            ) : (
+              <>
+                <PaperAirplaneIcon className='w-5 h-5' />
+                Send Message
+              </>
+            )}
           </motion.button>
 
           {/* Result Message */}

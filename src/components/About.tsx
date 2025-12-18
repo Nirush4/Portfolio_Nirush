@@ -95,32 +95,32 @@ export const techLogosLine1: TechLogo[] = [
 // line 2
 export const techLogosLine2: TechLogo[] = [
   {
-    node: <span className='text-3xl font-bold'>JWT</span>,
+    node: <span className='text-2xl font-bold'>JWT</span>,
     title: 'JWT',
     href: '',
   },
   {
-    node: <span className='text-3xl font-bold'>MSW</span>,
+    node: <span className='text-2xl font-bold'>MSW</span>,
     title: 'MSW',
     href: '',
   },
   {
-    node: <span className='text-3xl font-bold'>Jsdom</span>,
+    node: <span className='text-2xl font-bold'>Jsdom</span>,
     title: 'Jsdom',
     href: '',
   },
   {
-    node: <span className='text-3xl font-bold'>Vitest</span>,
+    node: <span className='text-2xl font-bold'>Vitest</span>,
     title: 'Vitest',
     href: '',
   },
   {
-    node: <span className='text-3xl font-bold'>Playwright</span>,
+    node: <span className='text-2xl font-bold'>Playwright</span>,
     title: 'Playwright',
     href: '',
   },
   {
-    node: <span className='text-3xl font-bold'>Cypress</span>,
+    node: <span className='text-2xl font-bold'>Cypress</span>,
     title: 'Cypress',
     href: '',
   },
@@ -182,7 +182,7 @@ export function About() {
       </div>
 
       {/* Main Content */}
-      <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-22 max-w-7xl md:grid-cols-12'>
+      <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-15 sm:py-22 max-w-7xl md:grid-cols-12'>
         {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
@@ -305,12 +305,24 @@ export function About() {
         <div className='relative flex items-center justify-center mt-10 overflow-visible sm:mt-20'>
           <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
 
-          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 transition-colors transition-colors dark:bg-black/20 border border-white/10 shadow-xl rounded-[40px] overflow-hidden'>
+          <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 transition-colors dark:bg-black/20 border border-white/10 shadow-xl rounded-3xl overflow-hidden'>
             {/* LINE 1 */}
-            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform mb-10'>
+            <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform mb-10'>
               <LogoLoop
-                logos={techLogosLine1}
-                speed={60}
+                logos={techLogosLine1.map((logo) => ({
+                  ...logo,
+                  node: (
+                    <div className='relative flex items-center justify-center group'>
+                      {logo.node}
+                      {logo.title && (
+                        <span className='absolute px-2 py-1 text-xs text-white transition-all duration-200 -translate-x-1/2 translate-y-1 rounded-md opacity-0 pointer-events-none whitespace-nowrap -top-6 left-1/2 group-hover:opacity-100 group-hover:-translate-y-1 bg-black/80 dark:bg-white/90 dark:text-black'>
+                          {logo.title}
+                        </span>
+                      )}
+                    </div>
+                  ),
+                }))}
+                speed={50}
                 direction='left'
                 logoHeight={20}
                 gap={70}
@@ -322,10 +334,22 @@ export function About() {
             </div>
 
             {/* LINE 2 */}
-            <div className='relative w-full sm:h-[50px] overflow-visible will-change-transform'>
+            <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform'>
               <LogoLoop
-                logos={techLogosLine2}
-                speed={60}
+                logos={techLogosLine2.map((logo) => ({
+                  ...logo,
+                  node: (
+                    <div className='relative flex items-center justify-center group'>
+                      {logo.node}
+                      {logo.title && (
+                        <span className='absolute px-2 py-1 text-xs text-white transition-all duration-200 -translate-x-1/2 translate-y-1 rounded-md opacity-0 pointer-events-none whitespace-nowrap -top-6 left-1/2 group-hover:opacity-100 group-hover:-translate-y-1 bg-black/80 dark:bg-white/90 dark:text-black'>
+                          {logo.title}
+                        </span>
+                      )}
+                    </div>
+                  ),
+                }))}
+                speed={50}
                 direction='right'
                 logoHeight={20}
                 gap={70}

@@ -3,6 +3,60 @@ import { Project } from '../types/project';
 export const projects: Project[] = [
   {
     id: 1,
+    name: 'Auction House 🏷️',
+    description:
+      'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2, developed under a strict requirement to use no JavaScript frameworks.',
+    story: [
+      'Auction House is a fully functional front-end web application developed as Semester Project 2 for the Front-End Development program at Noroff. The project focuses on building a modern, user-friendly, and secure auction platform that promotes fair bidding and transparent listing management among Noroff students.',
+      'The application integrates with the Noroff Auction House API (v2) to support core features such as user authentication, listing creation and management, and real-time bidding. Strong emphasis was placed on accessibility, responsiveness, and clean UI design to ensure a seamless experience across devices.',
+      'By completing this project, I strengthened my skills in Vanilla TypeScript, API-driven application architecture, and state management, while applying modern ES2025+ JavaScript features and best practices for maintainable front-end development.',
+    ],
+    features: [
+      {
+        title: 'Authentication system',
+        description:
+          'User registration and login powered by the Noroff Authentication API, including secure JWT token handling and protected routes.',
+      },
+      {
+        title: 'Auction listings',
+        description:
+          'Browse, search, and view active listings, with authenticated users able to create, edit, and delete their own auctions.',
+      },
+      {
+        title: 'Bidding system',
+        description:
+          'Place and view bids on active listings with dynamically updated bid information for a real-time auction experience.',
+      },
+      {
+        title: 'Profile management',
+        description:
+          'View user profile data, owned listings, total credits, and update avatars through the Noroff API.',
+      },
+      {
+        title: 'Responsive & dynamic UX',
+        description:
+          'Tailwind CSS–powered responsive layout with dynamic DOM updates, success feedback, and clear error messaging—no page reloads required.',
+      },
+      {
+        title: 'TypeScript API architecture',
+        description:
+          'Modular API handling built with Vanilla TypeScript, implementing full CRUD functionality for all auction-related endpoints.',
+      },
+    ],
+    technologies: [
+      'HTML5',
+      'Tailwind CSS',
+      'TypeScript',
+      'Noroff API v2',
+      'JWT Authentication',
+    ],
+    github: 'https://github.com/Nirush4/Auction-House',
+    live: 'https://auctionn-house.netlify.app/',
+    thumbnail: '/projects/aution-house.png',
+    screenshots: [],
+  },
+  {
+    id: 2,
     name: 'Rainy Days – Interactive Product Storefronts',
     description:
       'A dynamic online shop built with vanilla JavaScript and real-time product data from API.',
@@ -45,7 +99,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Social Media App – Frontend Social Platform',
     description:
       'Frontend social media app with post management, interactions, responsive design.',
@@ -88,7 +142,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Lens of Wanderlust 📸 – Travel Vlog Page',
     description:
       'Responsive travel vlog page with API-driven images and content display.',
@@ -131,7 +185,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Square Pumpkin 🤳🏼 – Social Media Platform',
     description:
       'Interactive social media platform with photo posts, personalized feeds, and built-in camera.',
@@ -179,7 +233,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 5,
+    id: 6,
     name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',

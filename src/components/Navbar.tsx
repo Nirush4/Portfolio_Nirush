@@ -9,8 +9,8 @@ const links = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
   { href: '#honors-awards', label: 'Honors & Awards' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export function Navbar() {
@@ -39,9 +39,9 @@ export function Navbar() {
         {/* Brand */}
         <Link
           href='#home'
-          className='text-xl font-extrabold tracking-tight text-transparent transition-opacity sm:text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text gradient-animate hover:opacity-90'
+          className='text-2xl font-extrabold tracking-tight text-transparent transition-opacity sm:text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text gradient-animate hover:opacity-90'
         >
-          Portfolio<span className='text-neutral-900 dark:text-white'>.</span>
+          Portfolio
         </Link>
 
         {/* Desktop Nav */}
