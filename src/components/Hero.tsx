@@ -43,7 +43,7 @@ export function Hero() {
 
           {/* Main Title */}
           <GradientText
-            className='block mb-3 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl'
+            className='block mb-3 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl'
             text='Frontend Developer'
             gradient='linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)'
           />

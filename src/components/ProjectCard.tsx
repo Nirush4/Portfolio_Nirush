@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <>
       <Tilt
-        glareEnable={true}
+        glareEnable
         glareMaxOpacity={0.2}
         scale={1.05}
         tiltMaxAngleX={20}
@@ -24,8 +24,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className='w-full max-w-sm'
       >
         <motion.div
-          onClick={() => setIsModalOpen(true)}
-          className='relative flex flex-col overflow-hidden transition-colors bg-white border shadow-xl cursor-pointer rounded-3xl border-white/10 dark:bg-gray-900 group'
+          className='relative flex flex-col overflow-hidden transition-colors bg-white border shadow-xl rounded-3xl border-white/10 dark:bg-gray-900 group'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -41,24 +40,33 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
               className='object-cover transition-transform duration-500 group-hover:scale-110 brightness-105 contrast-110'
             />
-            <div className='absolute inset-0 bg-gradient-to-t from-black/0 to-black/5'></div>
+            <div className='absolute inset-0 bg-gradient-to-t from-black/0 to-black/5' />
           </div>
 
           {/* Info */}
-          <div className='p-6 space-y-3'>
-            <h3 className='text-xl font-bold transition-colors text-transparenttext-neutral-700 dark:text-neutral-300'>
+          <div className='p-6 space-y-4 rounded'>
+            <h3 className='text-lg font-bold sm:text-xl text-neutral-700 dark:text-neutral-300'>
               {project?.name}
             </h3>
-            <p className='text-sm transition-colors text-neutral-700 dark:text-neutral-300'>
+
+            <p className='text-sm text-neutral-700 dark:text-neutral-300 line-clamp-3'>
               {project?.description}
             </p>
+
+            {/* Read More Button */}
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className='inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white transition-colors bg-black rounded-md cursor-pointer dark:text-black dark:bg-white hover:bg-gray-200'
+            >
+              Read More
+            </button>
           </div>
         </motion.div>
       </Tilt>
 
       {/* Modal */}
       <ProjectModal
-        project={project} // <-- fixed prop name
+        project={project}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
