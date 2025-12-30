@@ -30,7 +30,7 @@ export default function ProjectModal({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          onClick={onClose} // Close on backdrop click
+          onClick={onClose}
         >
           <motion.div
             className='relative w-full max-w-5xl overflow-hidden bg-white shadow-2xl dark:bg-gray-900 rounded-3xl'
@@ -38,14 +38,14 @@ export default function ProjectModal({
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <motion.button
               onClick={onClose}
               whileHover={{ scale: 1.2, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
-              className='absolute z-20 text-black transition cursor-pointer top-4 right-4 hover:text-purple-400'
+              className='absolute z-20 text-purple-400 transition cursor-pointer top-4 right-4'
             >
               <FaTimes size={28} />
             </motion.button>
@@ -101,7 +101,7 @@ export default function ProjectModal({
                       rel='noopener noreferrer'
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
-                      className='flex items-center gap-2 px-3 py-1 text-sm font-semibold text-white transition rounded shadow-md sm:test-base sm:rounded-lg h-fit sm:px-5 sm:py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:brightness-110'
+                      className='flex items-center gap-2 px-3 py-1 text-sm font-semibold text-white transition rounded shadow-md sm:rounded-lg sm:text-base h-fit sm:py-2 sm:px-5 bg-gradient-to-r from-green-400 to-blue-500 hover:brightness-110'
                     >
                       <FaExternalLinkAlt /> Live
                     </motion.a>
