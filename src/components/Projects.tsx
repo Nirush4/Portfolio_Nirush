@@ -36,7 +36,7 @@ export default function Projects() {
 
       {/* Project Cards Grid */}
       <motion.div
-        className='grid w-full grid-cols-1 gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3 justify-items-center'
+        className='grid w-full grid-cols-1 gap-8 mx-auto mt-12 max-w-7xl md:gap-15 sm:grid-cols-2 lg:grid-cols-3'
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, margin: '-100px' }}
