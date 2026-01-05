@@ -288,7 +288,7 @@
 /* MOBILE FIXES FOR AVATAR        */
 /* ------------------------------ */
 
-@media (max-width: 832px) {
+@media (max-width: 965px) {
   .pc-card {
     height: 70dvh;
     max-height: 450px;
