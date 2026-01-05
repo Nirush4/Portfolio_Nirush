@@ -37,7 +37,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
-      <div className='px-4 pt-10 mx-auto sm:pt-25 max-w-7xl'>
+      <div className='px-4 pt-10 mx-auto sm:pt-19 max-w-7xl'>
         <h2 className='max-w-4xl mb-4 text-2xl font-extrabold text-transparent md:text-4xl bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text'>
           Behind the Scenes of My Aceternity Journey
         </h2>

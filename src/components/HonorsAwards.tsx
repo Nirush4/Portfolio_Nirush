@@ -15,7 +15,7 @@ export default function HonorsAwards() {
   return (
     <section
       id='honors-awards'
-      className='relative py-14 sm:py-25 overflow-x-hidden'
+      className='relative overflow-x-hidden py-14 sm:py-19'
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>

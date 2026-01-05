@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section
       id='projects'
-      className='relative flex flex-col items-center justify-center gap-8 px-6 py-24 overflow-hidden md:px-8'
+      className='relative flex flex-col items-center justify-center gap-8 px-6 py-2 overflow-hidden sm:py-18 md:px-8'
     >
       {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
