@@ -182,7 +182,7 @@ export function About() {
       </div>
 
       {/* Main Content */}
-      <div className='relative z-10 grid items-center justify-center w-full gap-12 py-10 mx-auto sm:py-22 max-w-7xl md:grid-cols-12'>
+      <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-18 sm:py-22 max-w-7xl md:grid-cols-12'>
         {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}

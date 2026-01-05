@@ -8,7 +8,7 @@ import { clashDisplay } from '@/app/fonts/clash-display';
 
 export function Hero() {
   return (
-    <section className='relative flex flex-col justify-center w-full p-5 overflow-hidden align-middle mb-15 sm:mb-0 sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
+    <section className='relative flex flex-col justify-center w-full p-5 overflow-hidden align-middle mb-7 sm:mb-0 sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
       {/* Orb Background */}
       <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full mb-10 flex-shrink-0 sm:flex-shrink'>
         <Orb
