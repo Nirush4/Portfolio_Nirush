@@ -88,8 +88,7 @@ npm run dev
 
 This site is deployed and publicly available at:
 
-- [Live Site](https://portfolio-nirush.netlify.app/)  
-  _(Update with actual link when deployed)_
+- [Live Site](https://nirush.dev/)  
 
 ## Dependencies 📦
 
