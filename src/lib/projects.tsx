@@ -59,7 +59,7 @@ export const projects: Project[] = [
     id: 2,
     name: 'Flip Match – Memory Card Game',
     description:
-      'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS.',
+      'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth animations and intuitive gameplay.',
     story: [
       'Flip Match is an interactive memory card game developed as a front-end practice project to strengthen my skills in React, TypeScript, and modern UI development. The game challenges players to flip cards and find matching pairs while tracking moves and game progress.',
       'The project focuses on component-based architecture and predictable state management using React hooks. Core gameplay logic such as card flipping, match detection, turn control, and win conditions is handled through clean, well-structured TypeScript code, ensuring clarity and maintainability.',
