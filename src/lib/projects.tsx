@@ -57,6 +57,49 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    name: 'Flip Match – Memory Card Game',
+    description:
+      'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS.',
+    story: [
+      'Flip Match is an interactive memory card game developed as a front-end practice project to strengthen my skills in React, TypeScript, and modern UI development. The game challenges players to flip cards and find matching pairs while tracking moves and game progress.',
+      'The project focuses on component-based architecture and predictable state management using React hooks. Core gameplay logic such as card flipping, match detection, turn control, and win conditions is handled through clean, well-structured TypeScript code, ensuring clarity and maintainability.',
+      'By building Flip Match, I improved my understanding of React functional components, hook-driven state logic, and utility-first styling with Tailwind CSS. The project reinforced best practices for scalable front-end development while delivering a smooth, responsive, and engaging user experience.',
+    ],
+    features: [
+      {
+        title: 'Interactive memory game logic',
+        description:
+          'Implements card-flipping and matching mechanics with controlled turn flow, match validation, and win detection using React hooks.',
+      },
+      {
+        title: 'Component-based architecture',
+        description:
+          'Built with reusable React components for cards and game state, promoting clean separation of logic and UI.',
+      },
+      {
+        title: 'Move tracking & game reset',
+        description:
+          'Tracks the number of player moves and allows instant game restart with a newly shuffled deck.',
+      },
+      {
+        title: 'Responsive UI with Tailwind CSS',
+        description:
+          'Styled using Tailwind CSS to ensure a modern, responsive layout that adapts seamlessly across devices.',
+      },
+      {
+        title: 'TypeScript-first development',
+        description:
+          'Strongly typed game state, props, and logic improve reliability, readability, and long-term maintainability.',
+      },
+    ],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    github: 'https://github.com/Nirush4/Flip-Match',
+    live: 'https://flip-match-memory.netlify.app/',
+    thumbnail: '/projects/flip-match.png',
+    screenshots: [],
+  },
+  {
+    id: 3,
     name: 'Rainy Days – Interactive Product Storefronts',
     description:
       'A dynamic online shop built with vanilla JavaScript and real-time product data from API.',
@@ -99,7 +142,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Social Media App – Frontend Social Platform',
     description:
       'Frontend social media app with post management, interactions, responsive design.',
@@ -142,7 +185,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Lens of Wanderlust 📸 – Travel Vlog Page',
     description:
       'Responsive travel vlog page with API-driven images and content display.',
@@ -185,7 +228,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Square Pumpkin 🤳🏼 – Social Media Platform',
     description:
       'Interactive social media platform with photo posts, personalized feeds, and built-in camera.',
@@ -233,7 +276,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 6,
+    id: 7,
     name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',
