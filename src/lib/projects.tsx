@@ -3,6 +3,61 @@ import { Project } from '../types/project';
 export const projects: Project[] = [
   {
     id: 1,
+    name: 'NewsHub 📰',
+    description:
+      'Full-stack news platform built with React, TypeScript, and Tailwind CSS, using Supabase as a Backend-as-a-Service for authentication, database management, and secure CRUD operations.',
+    story: [
+      'NewsHub is a full-stack web application that allows users to browse public news articles and, once authenticated, create, update, and manage their own content.',
+      'The project is built using React and TypeScript on the frontend, with Supabase providing authentication, database storage, and Row Level Security (RLS). The application supports full CRUD functionality while enforcing access control so users can only modify their own articles.',
+      'Through this project, I gained hands-on experience with Supabase as a BaaS, frontend route protection, and conditional UI rendering based on authentication state. It also strengthened my understanding of scalable frontend architecture and cloud-based data management.',
+    ],
+    features: [
+      {
+        title: 'User authentication',
+        description:
+          'Email and password authentication powered by Supabase Auth, with conditional UI rendering and protected routes based on login state.',
+      },
+      {
+        title: 'Public article browsing',
+        description:
+          'All users can view published news articles, including title, body, category, submission date, and author information without authentication.',
+      },
+      {
+        title: 'Article management (CRUD)',
+        description:
+          'Authenticated users can create, edit, and delete their own news articles with automatic handling of user IDs and timestamps.',
+      },
+      {
+        title: 'Row Level Security (RLS)',
+        description:
+          'Secure database rules implemented in Supabase to ensure users can only modify their own content.',
+      },
+      {
+        title: 'Responsive & accessible UI',
+        description:
+          'Modern, responsive layout built with Tailwind CSS, featuring clear feedback messages, error handling, and intuitive navigation.',
+      },
+      {
+        title: 'State-driven UI logic',
+        description:
+          'Frontend UI dynamically adapts based on authentication state, hiding or revealing navigation links and actions as needed.',
+      },
+    ],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Supabase',
+      'Supabase Auth',
+      'PostgreSQL',
+    ],
+    github: 'https://github.com/Nirush4/Development-platforms-ca-nirush',
+    live: 'https://news-hubnet.netlify.app/?q=&page=1',
+    thumbnail: '/projects/news-hub.png',
+    screenshots: [],
+  },
+  {
+    id: 2,
     name: 'Auction House 🏷️',
     description:
       'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2, developed under a strict requirement to use no JavaScript frameworks.',
@@ -56,7 +111,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Flip Match – Memory Card Game',
     description:
       'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth animations and intuitive gameplay.',
@@ -99,7 +154,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Rainy Days – Interactive Product Storefronts',
     description:
       'A dynamic online shop built with vanilla JavaScript and real-time product data from API.',
@@ -142,7 +197,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Social Media App – Frontend Social Platform',
     description:
       'Frontend social media app with post management, interactions, responsive design.',
@@ -185,7 +240,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Lens of Wanderlust 📸 – Travel Vlog Page',
     description:
       'Responsive travel vlog page with API-driven images and content display.',
@@ -228,7 +283,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Square Pumpkin 🤳🏼 – Social Media Platform',
     description:
       'Interactive social media platform with photo posts, personalized feeds, and built-in camera.',
@@ -276,7 +331,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 7,
+    id: 8,
     name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',
