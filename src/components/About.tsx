@@ -223,11 +223,11 @@ export function About() {
             School of Technology and Digital Media (graduating 2026), I’m
             developing expertise in{' '}
             <strong>
-              HTML, CSS, JavaScript, TypeScript, React, Svelte, Next.js, and
-              Tailwind CSS
+              HTML, CSS, JavaScript, TypeScript, React, Next.js, and Tailwind
+              CSS
             </strong>{' '}
-            as well as tools like Vitest, Playwright, Cypress, and Storybook. In
-            the future, I plan to explore backend development to grow into a
+            as well as tools like Vitest, Playwright, and Cypress. In the
+            future, I plan to explore backend development to grow into a
             well-rounded full-stack developer.
           </motion.p>
 
