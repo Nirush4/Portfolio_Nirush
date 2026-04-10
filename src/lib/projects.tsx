@@ -3,6 +3,68 @@ import { Project } from '../types/project';
 export const projects: Project[] = [
   {
     id: 1,
+    name: 'Online Shop 🛒',
+    description:
+      'Frontend e-commerce application built with React and TypeScript, focused on performance, scalability, and a clean user experience.',
+    story: [
+      'Online Shop is a modern e-commerce web application where users can browse products, view detailed product pages, and complete purchases through a smooth checkout flow.',
+      'The project is built using React and TypeScript, with TanStack Query handling server state, caching, and synchronization. Zustand is used for lightweight and scalable global state management, particularly for the shopping cart.',
+      'Form validation is implemented using Zod to ensure type safety and a robust user input experience. The UI is built with Mantine UI and enhanced with Tailwind CSS for responsive design and flexible styling.',
+      'This project focuses on frontend architecture and simulates real-world e-commerce functionality, strengthening my skills in state management, data fetching, and building scalable, user-friendly interfaces.',
+    ],
+    features: [
+      {
+        title: 'Product listing with search & sorting',
+        description:
+          'Users can browse products with dynamic search and sorting functionality for an efficient and intuitive shopping experience.',
+      },
+      {
+        title: 'Product detail pages',
+        description:
+          'Each product includes detailed information, customer reviews, and ratings to help users make informed decisions.',
+      },
+      {
+        title: 'Shopping cart (Zustand)',
+        description:
+          'Global cart state managed with Zustand, allowing users to add, remove, and update product quantities seamlessly.',
+      },
+      {
+        title: 'Checkout flow',
+        description:
+          'Smooth and user-friendly checkout process with confirmation feedback upon successful order completion.',
+      },
+      {
+        title: 'Form validation (Zod)',
+        description:
+          'Robust and type-safe validation for forms, ensuring accurate user input and better error handling.',
+      },
+      {
+        title: 'Responsive & modern UI',
+        description:
+          'Built with Mantine UI and Tailwind CSS to deliver a clean, accessible, and fully responsive design across all devices.',
+      },
+      {
+        title: 'Dynamic breadcrumbs',
+        description:
+          'Improved navigation with dynamic breadcrumb trails, helping users understand their location within the app.',
+      },
+    ],
+    technologies: [
+      'React',
+      'TypeScript',
+      'TanStack Query',
+      'Zustand',
+      'Zod',
+      'Mantine UI',
+      'Tailwind CSS',
+    ],
+    github: 'https://github.com/Nirush4/JavaScript-Frameworks',
+    live: 'https://online-shopping-master.netlify.app/',
+    thumbnail: '/projects/online-shopping.png',
+    screenshots: [],
+  },
+  {
+    id: 2,
     name: 'NewsHub 📰',
     description:
       'Full-stack news platform built with React, TypeScript, and Tailwind CSS, using Supabase as a Backend-as-a-Service for authentication, database management, and secure CRUD operations.',
@@ -57,7 +119,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Auction House 🏷️',
     description:
       'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2, developed under a strict requirement to use no JavaScript frameworks.',
@@ -111,7 +173,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Flip Match – Memory Card Game',
     description:
       'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth animations and intuitive gameplay.',
@@ -154,7 +216,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Rainy Days – Interactive Product Storefronts',
     description:
       'A dynamic online shop built with vanilla JavaScript and real-time product data from API.',
@@ -197,7 +259,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Social Media App – Frontend Social Platform',
     description:
       'Frontend social media app with post management, interactions, responsive design.',
@@ -240,7 +302,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Lens of Wanderlust 📸 – Travel Vlog Page',
     description:
       'Responsive travel vlog page with API-driven images and content display.',
@@ -283,7 +345,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 7,
+    id: 8,
     name: 'Square Pumpkin 🤳🏼 – Social Media Platform',
     description:
       'Interactive social media platform with photo posts, personalized feeds, and built-in camera.',
@@ -331,7 +393,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 8,
+    id: 9,
     name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',
