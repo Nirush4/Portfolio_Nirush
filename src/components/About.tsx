@@ -208,9 +208,12 @@ export function About() {
             <span className='font-semibold text-indigo-600 transition-colors dark:text-indigo-400'>
               Nirushan Rajamanoharan
             </span>
-            , a Frontend Developer and former Graphic Designer based in Oslo,
-            Norway crafting visually engaging and technically refined digital
-            experiences.
+            , a <strong> Front-End Developer </strong>and former{' '}
+            <strong> Graphic Designer </strong> based in Oslo, Norway,
+            passionate about building modern, accessible, and user-focused web
+            applications. With 8 years of experience in graphic design, I bring
+            a strong understanding of visual communication, user experience, and
+            design systems into every project I build.
           </motion.p>
 
           <motion.p
@@ -219,16 +222,16 @@ export function About() {
             transition={{ delay: 0.2 }}
             className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
-            Currently studying <strong>Frontend Development</strong> at Noroff
-            School of Technology and Digital Media (graduating 2026), I’m
-            developing expertise in{' '}
+            Having recently completed my <strong>Frontend Development</strong>{' '}
+            studies at Noroff, and gained professional experience as a{' '}
+            <strong>Front-End Developer Intern </strong> at Publicis Norway, I
+            specialize in React and TypeScript, while also working with{' '}
             <strong>
-              HTML, CSS, JavaScript, TypeScript, React, Next.js, and Tailwind
-              CSS
+              Next.js, JavaScript, Tailwind CSS, Mantine, Zustand, Zod
             </strong>{' '}
-            as well as tools like Vitest, Playwright, and Cypress. In the
-            future, I plan to explore backend development to grow into a
-            well-rounded full-stack developer.
+            and modern testing tools such as Vitest, Playwright, and Cypress. I
+            enjoy transforming complex requirements into clean, maintainable,
+            and scalable solutions that deliver great user experiences.
           </motion.p>
 
           <motion.p
@@ -237,10 +240,14 @@ export function About() {
             transition={{ delay: 0.3 }}
             className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
-            My eight-year background as a <strong>Graphic Designer</strong>{' '}
-            gives me a unique eye for UI/UX, accessibility, and the harmony
-            between design and functionality. I’m now exploring how{' '}
-            <strong>AI</strong> enhances creativity and development workflows.
+            My unique combination of design and development expertise allows me
+            to bridge the gap between aesthetics and functionality. I thrive in
+            collaborative environments, continuously explore new technologies,
+            and am currently seeking opportunities as a Front-End Developer. My
+            long-term goal is to expand into full-stack development while
+            creating impactful digital products that solve real-world problems.
+            I’m now exploring how <strong>AI</strong> enhances creativity and
+            development workflows.
           </motion.p>
 
           <motion.span
