@@ -27,9 +27,6 @@ import {
   SiAdobelightroom,
 } from 'react-icons/si';
 
-// ------------------------
-// Types
-// ------------------------
 export interface TechLogo {
   src?: string;
   srcSet?: string;
@@ -42,9 +39,6 @@ export interface TechLogo {
   node?: React.ReactNode;
 }
 
-// ------------------------
-// LOGO LINES
-// ------------------------
 export const techLogosLine1: TechLogo[] = [
   {
     node: <SiHtml5 size={35} />,
@@ -166,24 +160,18 @@ export const techLogosLine2: TechLogo[] = [
   },
 ];
 
-// ----------------------
-//   ABOUT COMPONENT
-// ----------------------
 export function About() {
   return (
     <section
       id='about'
       className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:px-8 md:mt-10'
     >
-      {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
-      {/* Main Content */}
       <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-18 sm:py-22 max-w-7xl md:grid-cols-12'>
-        {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -208,9 +196,12 @@ export function About() {
             <span className='font-semibold text-indigo-600 transition-colors dark:text-indigo-400'>
               Nirushan Rajamanoharan
             </span>
-            , a Frontend Developer and former Graphic Designer based in Oslo,
-            Norway crafting visually engaging and technically refined digital
-            experiences.
+            , a <strong> Front-End Developer </strong>and former{' '}
+            <strong> Graphic Designer </strong> based in Oslo, Norway,
+            passionate about building modern, accessible, and user-focused web
+            applications. With 8 years of experience in graphic design, I bring
+            a strong understanding of visual communication, user experience, and
+            design systems into every project I build.
           </motion.p>
 
           <motion.p
@@ -219,16 +210,16 @@ export function About() {
             transition={{ delay: 0.2 }}
             className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
-            Currently studying <strong>Frontend Development</strong> at Noroff
-            School of Technology and Digital Media (graduating 2026), I’m
-            developing expertise in{' '}
+            Having recently completed my <strong>Frontend Development</strong>{' '}
+            studies at Noroff, and gained professional experience as a{' '}
+            <strong>Front-End Developer Intern </strong> at Publicis Norway, I
+            specialize in React and TypeScript, while also working with{' '}
             <strong>
-              HTML, CSS, JavaScript, TypeScript, React, Next.js, and Tailwind
-              CSS
+              Next.js, JavaScript, Tailwind CSS, Mantine, Zustand, Zod
             </strong>{' '}
-            as well as tools like Vitest, Playwright, and Cypress. In the
-            future, I plan to explore backend development to grow into a
-            well-rounded full-stack developer.
+            and modern testing tools such as Vitest, Playwright, and Cypress. I
+            enjoy transforming complex requirements into clean, maintainable,
+            and scalable solutions that deliver great user experiences.
           </motion.p>
 
           <motion.p
@@ -237,10 +228,14 @@ export function About() {
             transition={{ delay: 0.3 }}
             className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
-            My eight-year background as a <strong>Graphic Designer</strong>{' '}
-            gives me a unique eye for UI/UX, accessibility, and the harmony
-            between design and functionality. I’m now exploring how{' '}
-            <strong>AI</strong> enhances creativity and development workflows.
+            My unique combination of design and development expertise allows me
+            to bridge the gap between aesthetics and functionality. I thrive in
+            collaborative environments, continuously explore new technologies,
+            and am currently seeking opportunities as a Front-End Developer. My
+            long-term goal is to expand into full-stack development while
+            creating impactful digital products that solve real-world problems.
+            I’m now exploring how <strong>AI</strong> enhances creativity and
+            development workflows.
           </motion.p>
 
           <motion.span
@@ -253,7 +248,6 @@ export function About() {
           </motion.span>
         </motion.div>
 
-        {/* RIGHT CONTAINER */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -271,8 +265,8 @@ export function About() {
               handle='nirush4'
               status='Online'
               contactText='Contact Me'
-              avatarUrl='/IMG_9314.JPG' // ← FIXED
-              miniAvatarUrl='/IMG_9314.JPG' // ← FIXED
+              avatarUrl='/IMG_9314.JPG'
+              miniAvatarUrl='/IMG_9314.JPG'
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -288,7 +282,6 @@ export function About() {
         </motion.div>
       </div>
 
-      {/* SKILLS SECTION */}
       <section className='relative w-full mx-auto mb-20 overflow-visible max-w-7xl sm:mt-20'>
         <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-gray-800 transition-colors dark:text-white md:text-4xl'>
           My{' '}
@@ -306,7 +299,6 @@ export function About() {
           <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
 
           <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 transition-colors dark:bg-black/20 border border-white/10 shadow-xl rounded-3xl overflow-hidden'>
-            {/* LINE 1 */}
             <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform mb-10'>
               <LogoLoop
                 logos={techLogosLine1.map((logo) => ({
@@ -333,7 +325,6 @@ export function About() {
               />
             </div>
 
-            {/* LINE 2 */}
             <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform'>
               <LogoLoop
                 logos={techLogosLine2.map((logo) => ({

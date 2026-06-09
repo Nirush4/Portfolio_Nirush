@@ -64,7 +64,6 @@ export default function ContactSection() {
       className='py-10 transition-colors duration-500 bg-gray-200 sm:py-20 dark:bg-black text-neutral-700 dark:text-neutral-300'
     >
       <div className='max-w-3xl px-6 mx-auto'>
-        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +83,6 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        {/* Contact Form */}
         <motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 40 }}
@@ -99,7 +97,6 @@ export default function ContactSection() {
             value='New Portfolio Contact Message'
           />
 
-          {/* Name Field */}
           <div>
             <label className='block mb-1 transition-colors text-smtext-neutral-700 dark:text-neutral-300 sm:text-base'>
               Name
@@ -112,7 +109,6 @@ export default function ContactSection() {
             />
           </div>
 
-          {/* Email Field */}
           <div>
             <label className='block mb-1 text-sm text-gray-300 transition-colors sm:text-base'>
               Email
@@ -126,7 +122,6 @@ export default function ContactSection() {
             />
           </div>
 
-          {/* Message Field */}
           <div>
             <label className='block mb-1 text-sm text-gray-300 transition-colors sm:text-base'>
               Message
@@ -140,7 +135,6 @@ export default function ContactSection() {
             />
           </div>
 
-          {/* Submit Button */}
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
@@ -174,10 +168,9 @@ export default function ContactSection() {
             )}
           </motion.button>
 
-          {/* Result Message */}
           {resultMessage && (
             <p
-              className={`pt-4 text-center text-base font-bold px-4 py-2 rounded-md ${
+              className={`pt-4 text-center text-base  px-4 py-2 rounded-md ${
                 statusType === 'success'
                   ? 'bg-green-600 text-white border border-green-400'
                   : statusType === 'error'

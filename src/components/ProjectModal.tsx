@@ -40,7 +40,6 @@ export default function ProjectModal({
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <motion.button
               onClick={onClose}
               whileHover={{ scale: 1.2, rotate: 90 }}
@@ -50,9 +49,7 @@ export default function ProjectModal({
               <FaTimes size={28} />
             </motion.button>
 
-            {/* Scrollable Content */}
             <div className='max-h-[90vh] overflow-y-auto'>
-              {/* Full Thumbnail */}
               <div className='relative w-full max-h-[80vh] bg-black flex justify-center items-center'>
                 <Image
                   src={images[0]}
@@ -63,7 +60,6 @@ export default function ProjectModal({
                 />
               </div>
               <div className='flex flex-wrap justify-between gap-2 p-6 space-y-6 align-middle techandlinks'>
-                {/* Technologies */}
                 <div className='mb-0'>
                   <h3 className='mb-2 text-base font-semibold text-gray-900 sm:text-lg dark:text-white'>
                     Technologies
@@ -80,7 +76,6 @@ export default function ProjectModal({
                   </div>
                 </div>
 
-                {/* Links */}
                 <div className='flex flex-wrap items-end gap-4'>
                   {project.github && (
                     <motion.a
@@ -108,7 +103,7 @@ export default function ProjectModal({
                   )}
                 </div>
               </div>
-              {/* Text Section */}
+
               <div className='p-6 space-y-6'>
                 <h2 className='text-lg font-bold text-gray-900 sm:text-xl md:text-3xl dark:text-white'>
                   {project.name}

@@ -9,7 +9,6 @@ import { clashDisplay } from '@/app/fonts/clash-display';
 export function Hero() {
   return (
     <section className='relative flex flex-col justify-center w-full p-5 overflow-hidden align-middle mb-7 sm:mb-0 sm:p-10 sm:min-h-screen sm:mt-5 sm:block'>
-      {/* Orb Background */}
       <div className='relative sm:absolute inset-0 w-full h-[270px] sm:h-full mb-10 flex-shrink-0 sm:flex-shrink'>
         <Orb
           hoverIntensity={1.5}
@@ -25,7 +24,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Foreground Content */}
       <motion.div
         initial={{ y: 18, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -35,20 +33,17 @@ export function Hero() {
         <h1
           className={`text-gray-700 dark:text-white transition-colors leading-[1.15] ${clashDisplay.className} mx-auto`}
         >
-          {/* Intro Name */}
           <span className='block mb-2 text-sm font-medium tracking-wide sm:text-lg md:text-2xl opacity-80'>
             Hi, I&apos;m{' '}
             <span className='font-semibold'>Nirushan Rajamanoharan</span>
           </span>
 
-          {/* Main Title */}
           <GradientText
             className='block mb-3 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl'
             text='Frontend Developer'
             gradient='linear-gradient(90deg, #60a5fa, #a855f7, #ec4899)'
           />
 
-          {/* Secondary Title */}
           <GradientText
             className='block text-xl font-semibold tracking-tight sm:text-3xl md:text-4xl opacity-95'
             text='& Graphic Designer'
@@ -56,7 +51,6 @@ export function Hero() {
           />
         </h1>
 
-        {/* Buttons */}
         <div className='flex flex-wrap items-center justify-center gap-3 mt-6'>
           <GradientSlideButton>
             <a href='#projects'>View Projects</a>

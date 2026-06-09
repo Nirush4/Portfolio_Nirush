@@ -10,13 +10,11 @@ export default function Projects() {
       id='projects'
       className='relative flex flex-col items-center justify-center gap-8 px-6 py-2 overflow-hidden sm:py-18 md:px-8'
     >
-      {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute -left-40 top-1/3 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-indigo-500/30 to-purple-400/15 blur-3xl' />
         <div className='absolute -right-40 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-r from-purple-400/25 to-indigo-400/20 blur-3xl' />
       </div>
 
-      {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +32,6 @@ export default function Projects() {
         </p>
       </motion.div>
 
-      {/* Project Cards Grid */}
       <motion.div
         className='grid w-full grid-cols-1 gap-8 mx-auto mt-12 max-w-7xl md:gap-15 sm:grid-cols-2 lg:grid-cols-3'
         initial='hidden'
