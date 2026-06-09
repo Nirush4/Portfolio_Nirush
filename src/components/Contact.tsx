@@ -122,7 +122,6 @@ export default function ContactSection() {
             />
           </div>
 
-          {/* Message Field */}
           <div>
             <label className='block mb-1 text-sm text-gray-300 transition-colors sm:text-base'>
               Message
@@ -171,7 +170,7 @@ export default function ContactSection() {
 
           {resultMessage && (
             <p
-              className={`pt-4 text-center text-base font-bold px-4 py-2 rounded-md ${
+              className={`pt-4 text-center text-base  px-4 py-2 rounded-md ${
                 statusType === 'success'
                   ? 'bg-green-600 text-white border border-green-400'
                   : statusType === 'error'

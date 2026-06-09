@@ -4,55 +4,127 @@ import { Timeline } from '@/components/ui/timeline';
 export default function TimelineDemo() {
   const data = [
     {
-      title: '2024 - Present',
+      title: '02 Feb 2026 - 30 Apr 2026',
       content: (
         <div>
           <h3 className='text-base font-bold transition-colors md:text-2xl text-neutral-700 dark:text-gray-200'>
-            Front-end Developer (Student)
+            Front-End Developer Intern
           </h3>
+
+          <h3 className='text-sm text-gray-600 transition-colors md:text-base dark:text-gray-200'>
+            Publicis Norway
+          </h3>
+          <a
+            href='https://www.publicis.no/'
+            target='blank'
+            className='text-sm text-transparent sm:text-base bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text'
+          >
+            https://www.publicis.no/
+          </a>
+
+          <div className='mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
+            <p className='text-sm font-bold transition-colors md:text-lg text-neutral-700 dark:text-gray-200'>
+              Focus & Experience:
+            </p>
+
+            <ul className='mt-2 ml-5 list-disc'>
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Worked as a Front-End Developer Intern on real projects in a
+                professional environment
+              </li>
+
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Built and improved user interfaces using <strong>React</strong>{' '}
+                and <strong>TypeScript</strong>
+              </li>
+
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Integrated and consumed <strong>REST APIs</strong> to manage
+                dynamic data in frontend applications
+              </li>
+
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Collaborated closely with backend developer, and frontend
+                developers in an agile environment, contributing to sprint
+                planning, code reviews, and feature delivery
+              </li>
+
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Improved UI components for performance, responsiveness, and user
+                experience
+              </li>
+
+              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
+                Strengthened practical skills in modern frontend development
+                using React, and TypeScript best practices
+              </li>
+            </ul>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: '2024 - 2026',
+      content: (
+        <div>
+          <h3 className='text-base font-bold transition-colors md:text-2xl text-neutral-700 dark:text-gray-200'>
+            Front-End Developer
+          </h3>
+
           <h3 className='mb-2 text-sm transition-colors md:text-base text-neutral-700 dark:text-gray-200'>
             Noroff Oslo
           </h3>
+
           <div className='mb-8 text-xs font-normal transition-colors text-neutral-800 md:text-sm dark:text-neutral-200'>
             <p className='text-sm font-bold transition-colors md:text-lg text-neutral-700 dark:text-gray-200'>
-              Responsibilities & Tasks:
+              Focus & Experience:
             </p>
+
             <ul className='mt-2 ml-5 list-disc'>
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Developed responsive web applications using HTML, CSS, and
-                JavaScript
+                Built modern, responsive web applications using{' '}
+                <strong>React</strong> and component-based architecture
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Built interactive UI components and implemented user-friendly
-                interfaces
+                Developed scalable front-end applications using{' '}
+                <strong>TypeScript</strong> for type safety and maintainability
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Worked on **React** and **Next.js** projects, exploring
-                component-based architecture
+                Created reusable UI components and structured application logic
+                using modern React patterns (hooks, props, state management)
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Implemented projects using **TypeScript** for type safety and
-                maintainability
+                Worked with <strong>Next.js</strong> for routing, rendering
+                strategies, and performance optimization
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Collaborated on team projects, following agile/scrum workflows
+                Integrated APIs and handled asynchronous data flow in React
+                applications
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Integrated APIs and handled data dynamically in web applications
+                Implemented global state management and application logic in
+                React-based projects
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Conducted cross-browser testing to ensure consistent performance
+                Worked with testing tools such as{' '}
+                <strong>Vitest, Playwright, and Cypress</strong> to ensure
+                application reliability
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Used testing tools like **Vitest, Playwright, and Cypress** to
-                ensure code quality
+                Collaborated in team environments using Git and GitHub workflows
+                following agile practices
               </li>
+
               <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Learned and applied version control using Git and GitHub
-              </li>
-              <li className='text-sm text-gray-600 transition-colors sm:text-base dark:text-gray-200'>
-                Participated in peer code reviews and improved code quality
-                through feedback
+                Focused on writing clean, maintainable, and scalable frontend
+                code using React best practices
               </li>
             </ul>
           </div>
@@ -60,28 +132,31 @@ export default function TimelineDemo() {
           <div className='grid grid-cols-2 gap-4'>
             <img
               src='/projects/rainydays.jpg'
-              alt='startup template'
+              alt='project preview'
               width={500}
               height={500}
               className='h-30 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60'
             />
+
             <img
-              src='/projects/social-media-app.png'
-              alt='startup template'
+              src='/projects/aution-house.png'
+              alt='project preview'
               width={500}
               height={500}
               className='h-30 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60'
             />
+
             <img
-              src='/projects/lensofwanderlust-vlog.jpg'
-              alt='startup template'
+              src='/projects/holidaze.png'
+              alt='project preview'
               width={500}
               height={500}
               className='h-30 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60'
             />
+
             <img
-              src='/projects/community-science-museum.jpg'
-              alt='startup template'
+              src='/projects/online-shopping.png'
+              alt='project preview'
               width={500}
               height={500}
               className='h-30 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60'
