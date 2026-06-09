@@ -36,7 +36,6 @@ export function Navbar() {
       }`}
     >
       <nav className='container relative flex items-center justify-between h-16 px-6 mx-auto md:h-20'>
-        {/* Brand */}
         <Link
           href='#home'
           className='text-2xl font-extrabold tracking-tight text-transparent transition-opacity sm:text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text gradient-animate hover:opacity-90'
@@ -44,7 +43,6 @@ export function Navbar() {
           Portfolio
         </Link>
 
-        {/* Desktop Nav */}
         <ul className='items-center hidden gap-8 lg:flex'>
           {links.map((link) => (
             <li key={link.href} className='relative group'>
@@ -62,7 +60,6 @@ export function Navbar() {
           </li>
         </ul>
 
-        {/* Desktop Contact */}
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
@@ -72,12 +69,9 @@ export function Navbar() {
           Let’s Talk
         </motion.a>
 
-        {/* RIGHT SIDE (Mobile) */}
         <div className='flex items-center gap-3 lg:hidden'>
-          {/* Mobile Light/Dark Toggle */}
           <ThemeToggle />
 
-          {/* Mobile Hamburger */}
           <button
             className='inline-flex items-center justify-center w-10 h-10 transition-all border rounded-lg cursor-pointer text-neutral-800 dark:text-neutral-200 border-neutral-200/30 dark:border-neutral-800/80 backdrop-blur-sm hover:bg-neutral-100/20 dark:hover:bg-neutral-800/40'
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -96,7 +90,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -127,7 +120,6 @@ export function Navbar() {
                 </motion.li>
               ))}
 
-              {/* Toggle inside mobile menu */}
               <motion.li
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -17,13 +17,11 @@ export default function HonorsAwards() {
       id='honors-awards'
       className='relative overflow-x-hidden py-14 sm:py-19'
     >
-      {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
-      {/* Section Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,9 +39,7 @@ export default function HonorsAwards() {
       </motion.div>
 
       <div className='flex flex-col max-w-6xl gap-12 px-6 mx-auto md:flex-row'>
-        {/* Gallery (Top on mobile) */}
         <div className='flex flex-col items-center justify-center order-1 w-full gap-4 md:w-2/5 md:order-2'>
-          {/* Main Image */}
           <motion.div
             key={mainIndex}
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +57,6 @@ export default function HonorsAwards() {
             <div className='absolute inset-0 transition-opacity opacity-0 pointer-events-none bg-gradient-to-r from-white/0 via-white/20 to-white/0 group-hover:opacity-50 rounded-3xl'></div>
           </motion.div>
 
-          {/* Thumbnails stacked vertically on mobile */}
           <div className='flex gap-4 mt-2 md:mt-0'>
             {awards.map((award, index) => (
               <motion.div
@@ -86,7 +81,6 @@ export default function HonorsAwards() {
           </div>
         </div>
 
-        {/* Award Card */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

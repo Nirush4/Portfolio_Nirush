@@ -31,7 +31,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           whileHover={{ y: -5 }}
         >
-          {/* Thumbnail */}
           <div className='relative w-full overflow-hidden h-55 rounded-t-3xl'>
             <Image
               src={project?.thumbnail ?? '/default-thumbnail.png'}
@@ -43,7 +42,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <div className='absolute inset-0 bg-gradient-to-t from-black/0 to-black/5' />
           </div>
 
-          {/* Info */}
           <div className='p-6 space-y-4 rounded'>
             <h3 className='text-lg font-bold sm:text-xl text-neutral-700 dark:text-neutral-300'>
               {project?.name}
@@ -53,7 +51,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               {project?.description}
             </p>
 
-            {/* Read More Button */}
             <button
               onClick={() => setIsModalOpen(true)}
               className='inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white transition-colors bg-black rounded-md cursor-pointer dark:text-black dark:bg-white hover:bg-gray-200'
@@ -64,7 +61,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </motion.div>
       </Tilt>
 
-      {/* Modal */}
       <ProjectModal
         project={project}
         isOpen={isModalOpen}

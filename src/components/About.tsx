@@ -27,9 +27,6 @@ import {
   SiAdobelightroom,
 } from 'react-icons/si';
 
-// ------------------------
-// Types
-// ------------------------
 export interface TechLogo {
   src?: string;
   srcSet?: string;
@@ -42,9 +39,6 @@ export interface TechLogo {
   node?: React.ReactNode;
 }
 
-// ------------------------
-// LOGO LINES
-// ------------------------
 export const techLogosLine1: TechLogo[] = [
   {
     node: <SiHtml5 size={35} />,
@@ -166,24 +160,18 @@ export const techLogosLine2: TechLogo[] = [
   },
 ];
 
-// ----------------------
-//   ABOUT COMPONENT
-// ----------------------
 export function About() {
   return (
     <section
       id='about'
       className='relative flex flex-col items-center justify-center min-h-screen px-6 mx-auto overflow-x-hidden md:px-8 md:mt-10'
     >
-      {/* Background Glow */}
       <div className='absolute inset-0 pointer-events-none -z-10'>
         <div className='absolute w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/30 to-purple-400/15 rounded-full blur-3xl top-1/3 -left-40'></div>
         <div className='absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-400/25 to-indigo-400/20 rounded-full blur-3xl bottom-1/4 -right-40'></div>
       </div>
 
-      {/* Main Content */}
       <div className='relative z-10 grid items-center justify-center w-full gap-12 mx-auto py-18 sm:py-22 max-w-7xl md:grid-cols-12'>
-        {/* LEFT TEXT */}
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -260,7 +248,6 @@ export function About() {
           </motion.span>
         </motion.div>
 
-        {/* RIGHT CONTAINER */}
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -278,8 +265,8 @@ export function About() {
               handle='nirush4'
               status='Online'
               contactText='Contact Me'
-              avatarUrl='/IMG_9314.JPG' // ← FIXED
-              miniAvatarUrl='/IMG_9314.JPG' // ← FIXED
+              avatarUrl='/IMG_9314.JPG'
+              miniAvatarUrl='/IMG_9314.JPG'
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -295,7 +282,6 @@ export function About() {
         </motion.div>
       </div>
 
-      {/* SKILLS SECTION */}
       <section className='relative w-full mx-auto mb-20 overflow-visible max-w-7xl sm:mt-20'>
         <motion.h2 className='text-2xl font-extrabold tracking-tight text-center text-gray-800 transition-colors dark:text-white md:text-4xl'>
           My{' '}
@@ -313,7 +299,6 @@ export function About() {
           <div className='absolute w-full rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-3xl opacity-40 -z-10'></div>
 
           <div className='relative z-[2] w-full py-12 backdrop-blur-xl bg-white/5 transition-colors dark:bg-black/20 border border-white/10 shadow-xl rounded-3xl overflow-hidden'>
-            {/* LINE 1 */}
             <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform mb-10'>
               <LogoLoop
                 logos={techLogosLine1.map((logo) => ({
@@ -340,7 +325,6 @@ export function About() {
               />
             </div>
 
-            {/* LINE 2 */}
             <div className='relative w-full sm:h-[30px] overflow-visible will-change-transform'>
               <LogoLoop
                 logos={techLogosLine2.map((logo) => ({
