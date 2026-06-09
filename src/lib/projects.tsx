@@ -3,6 +3,76 @@ import { Project } from '../types/project';
 export const projects: Project[] = [
   {
     id: 1,
+    name: 'Holidaze 🏡',
+    description:
+      'Modern accommodation booking platform built with React and TypeScript, featuring venue management, bookings, authentication, and a scalable frontend architecture.',
+    story: [
+      'Holidaze is a modern accommodation booking platform where users can browse venues, search destinations, view availability, and make bookings through an intuitive user experience.',
+      'The application supports two user roles: customers and venue managers. Customers can book venues, manage upcoming bookings, and update their profiles, while venue managers can create, edit, and manage venue listings and bookings.',
+      'Built with React and TypeScript, the project focuses on maintainable architecture, type safety, accessibility, and responsive design. Zustand is used for global state management, while React Hook Form and Zod provide robust form handling and validation.',
+      'The user interface combines Mantine UI, Material UI, and Tailwind CSS to create a modern and responsive experience across desktop and mobile devices. Testing was implemented using Vitest and Playwright to ensure application reliability and quality.',
+    ],
+    features: [
+      {
+        title: 'Venue browsing & search',
+        description:
+          'Users can browse available venues, search destinations, and explore detailed venue information.',
+      },
+      {
+        title: 'Venue details & availability',
+        description:
+          'Each venue includes images, amenities, pricing information, and an availability calendar for bookings.',
+      },
+      {
+        title: 'Booking management',
+        description:
+          'Customers can create, view, and cancel bookings through a streamlined booking workflow.',
+      },
+      {
+        title: 'Venue manager dashboard',
+        description:
+          'Venue managers can create, edit, delete, and manage accommodation listings and bookings.',
+      },
+      {
+        title: 'Authentication & user profiles',
+        description:
+          'Secure user authentication with support for profile management and avatar updates.',
+      },
+      {
+        title: 'Form validation (React Hook Form + Zod)',
+        description:
+          'Type-safe and scalable form validation for registration, login, venue management, and booking forms.',
+      },
+      {
+        title: 'Responsive & accessible UI',
+        description:
+          'Built with Mantine UI, Material UI, and Tailwind CSS to provide a consistent experience across all devices.',
+      },
+      {
+        title: 'Testing & quality assurance',
+        description:
+          'Unit, component, and end-to-end testing implemented using Vitest and Playwright.',
+      },
+    ],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Mantine UI',
+      'Material UI',
+      'Zustand',
+      'React Hook Form',
+      'Zod',
+      'Vitest',
+      'Playwright',
+    ],
+    github: 'https://github.com/Nirush4/Holidaze-booking-platform',
+    live: 'https://holidaze-booking-hub.netlify.app/',
+    thumbnail: '/projects/holidaze.png',
+    screenshots: [],
+  },
+  {
+    id: 2,
     name: 'Online Shop 🛒',
     description:
       'Frontend e-commerce application built with React and TypeScript, focused on performance, scalability, and a clean user experience.',
@@ -64,7 +134,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 2,
+    id: 3,
     name: 'NewsHub 📰',
     description:
       'Full-stack news platform built with React, TypeScript, and Tailwind CSS, using Supabase as a Backend-as-a-Service for authentication, database management, and secure CRUD operations.',
@@ -119,7 +189,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Auction House 🏷️',
     description:
       'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2, developed under a strict requirement to use no JavaScript frameworks.',
@@ -173,7 +243,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Flip Match – Memory Card Game',
     description:
       'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth animations and intuitive gameplay.',
@@ -216,7 +286,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Rainy Days – Interactive Product Storefronts',
     description:
       'A dynamic online shop built with vanilla JavaScript and real-time product data from API.',
@@ -259,7 +329,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Social Media App – Frontend Social Platform',
     description:
       'Frontend social media app with post management, interactions, responsive design.',
@@ -302,7 +372,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 7,
+    id: 8,
     name: 'Lens of Wanderlust 📸 – Travel Vlog Page',
     description:
       'Responsive travel vlog page with API-driven images and content display.',
@@ -345,7 +415,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 8,
+    id: 9,
     name: 'Square Pumpkin 🤳🏼 – Social Media Platform',
     description:
       'Interactive social media platform with photo posts, personalized feeds, and built-in camera.',
@@ -393,7 +463,7 @@ export const projects: Project[] = [
     screenshots: [],
   },
   {
-    id: 9,
+    id: 10,
     name: 'The Community Science Museum: Discover Together',
     description:
       'Interactive, responsive science museum website for kids, families, and educators.',
