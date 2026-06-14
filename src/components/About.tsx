@@ -210,16 +210,18 @@ export function About() {
             transition={{ delay: 0.2 }}
             className='max-w-xl text-base leading-relaxed transition-colors text-neutral-700 dark:text-neutral-300'
           >
-            Having recently completed my <strong>Frontend Development</strong>{' '}
-            studies at Noroff, and gained professional experience as a{' '}
-            <strong>Front-End Developer Intern </strong> at Publicis Norway, I
-            specialize in React and TypeScript, while also working with{' '}
-            <strong>
-              Next.js, JavaScript, Tailwind CSS, Mantine, Zustand, Zod
-            </strong>{' '}
-            and modern testing tools such as Vitest, Playwright, and Cypress. I
-            enjoy transforming complex requirements into clean, maintainable,
-            and scalable solutions that deliver great user experiences.
+            I recently completed a Professional Degree in{' '}
+            <strong>Frontend Development</strong> from Noroff, where I achieved
+            A grades across all semesters and received the Golden Egg – Best
+            Student Project award in 2025. I also gained professional experience
+            as a <strong>Front-End Developer Intern</strong> at Publicis Norway.
+            <br />
+            <br />I specialize in <strong>React</strong> and{' '}
+            <strong>TypeScript</strong>, while also working with{' '}
+            <strong>Next.js</strong> as well as modern testing tools such as{' '}
+            <strong>Vitest, Playwright, and Cypress</strong>. I enjoy
+            transforming complex requirements into clean, maintainable, and
+            scalable solutions that deliver great user experiences.
           </motion.p>
 
           <motion.p
