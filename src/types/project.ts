@@ -22,4 +22,5 @@ export interface Project {
 
   thumbnail?: string;
   screenshots?: string[];
+  category: string;
 }
