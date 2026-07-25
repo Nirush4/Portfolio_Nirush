@@ -50,6 +50,7 @@ export const projects: Project[] = [
       'https://www.figma.com/design/XNqFbiOZuNuuIp7xPNdLtc/Holidaze?node-id=0-1&t=w4cNDvcLeRQdYoPI-1',
     thumbnail: '/projects/holidaze.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -97,6 +98,7 @@ export const projects: Project[] = [
     live: 'https://online-shopping-master.netlify.app/',
     thumbnail: '/projects/online-shopping.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -143,6 +145,7 @@ export const projects: Project[] = [
     live: 'https://news-hubnet.netlify.app/?q=&page=1',
     thumbnail: '/projects/news-hub.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -190,6 +193,7 @@ export const projects: Project[] = [
       'https://www.figma.com/design/24nEKpFa9DxvuXji5oADrA/Auction-House?node-id=0-1&t=V6CCv8hOE97gdcae-1',
     thumbnail: '/projects/aution-house.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -228,6 +232,7 @@ export const projects: Project[] = [
     live: 'https://flip-match-memory.netlify.app/',
     thumbnail: '/projects/flip-match.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -268,6 +273,7 @@ export const projects: Project[] = [
       'https://www.figma.com/design/hgQ4WNNGSHOxg9DViYzdIA/Rainydays-Superman?node-id=0-1&t=2S1d9x6TllOtDOsy-1',
     thumbnail: '/projects/rainydays.jpg',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -314,6 +320,7 @@ export const projects: Project[] = [
     live: 'https://javascript-2-assignment-socialmedia.netlify.app/',
     thumbnail: '/projects/social-media-app.png',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -354,6 +361,7 @@ export const projects: Project[] = [
       'https://www.figma.com/design/tC4Vb684z0vqyUyatYSfpv/Lens-of-Wanderlust?node-id=0-1&t=0WfBButjx90Q0IqV-1',
     thumbnail: '/projects/lensofwanderlust-vlog.jpg',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -392,6 +400,7 @@ export const projects: Project[] = [
     live: 'https://squarepumpkin.netlify.app/',
     thumbnail: '/projects/squarepumpkin.jpg',
     screenshots: [],
+    category: 'frontend',
   },
 
   {
@@ -430,5 +439,6 @@ export const projects: Project[] = [
     live: 'https://thecommunitysciencemuseum1.netlify.app/',
     thumbnail: '/projects/community-science-museum.jpg',
     screenshots: [],
+    category: 'frontend',
   },
 ];
