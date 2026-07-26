@@ -2,17 +2,17 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+
 import ProjectCard from './ProjectCard';
+
 import { projects } from '../lib/projects';
+import { graphicProjects } from '@/lib/graphicProjects';
+import GraphicDesignCard from './ui/graphic/GraphicDesignCard';
 
 type ProjectCategory = 'frontend' | 'graphic';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('frontend');
-
-  const filteredProjects = projects.filter(
-    (project) => project.category === activeTab
-  );
 
   const tabs = [
     {
@@ -82,6 +82,7 @@ export default function Projects() {
           return (
             <button
               key={tab.id}
+              type='button'
               role='tab'
               aria-selected={active}
               aria-controls={`${tab.id}-panel`}
@@ -93,7 +94,7 @@ export default function Projects() {
 
                 focus-visible:outline-none
                 focus-visible:ring-4
-                focus-visible:ring-indigo-400/50
+                focus-visible:ring-orange-400/50
 
                 ${
                   active
@@ -108,10 +109,10 @@ export default function Projects() {
         })}
       </motion.div>
 
-      {filteredProjects.length > 0 ? (
+      {activeTab === 'frontend' ? (
         <motion.div
-          key={activeTab}
-          id={`${activeTab}-panel`}
+          key='frontend'
+          id='frontend-panel'
           role='tabpanel'
           aria-live='polite'
           className='grid w-full grid-cols-1 gap-8 mt-12 max-w-7xl sm:grid-cols-2 lg:grid-cols-3'
@@ -119,7 +120,6 @@ export default function Projects() {
           animate='show'
           variants={{
             hidden: {},
-
             show: {
               transition: {
                 staggerChildren: 0.12,
@@ -127,7 +127,7 @@ export default function Projects() {
             },
           }}
         >
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               variants={{
@@ -135,7 +135,6 @@ export default function Projects() {
                   opacity: 0,
                   y: 40,
                 },
-
                 show: {
                   opacity: 1,
                   y: 0,
@@ -148,6 +147,47 @@ export default function Projects() {
               className='flex justify-center'
             >
               <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
+      ) : graphicProjects.length > 0 ? (
+        <motion.div
+          key='graphic'
+          id='graphic-panel'
+          role='tabpanel'
+          aria-live='polite'
+          className='grid w-full grid-cols-1 gap-8 mt-12 max-w-7xl sm:grid-cols-2 lg:grid-cols-3'
+          initial='hidden'
+          animate='show'
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                staggerChildren: 0.12,
+              },
+            },
+          }}
+        >
+          {graphicProjects.map((project) => (
+            <motion.div
+              key={project.id}
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 40,
+                },
+                show: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              transition={{
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
+              className='flex justify-center'
+            >
+              <GraphicDesignCard project={project} />
             </motion.div>
           ))}
         </motion.div>
@@ -171,7 +211,7 @@ export default function Projects() {
 
             <p className='mt-3 text-neutral-600 dark:text-neutral-400'>
               I&apos;m preparing creative design work to showcase branding,
-              visual design, and UI graphics here.
+              visual design, packaging, and creative direction.
             </p>
           </div>
         </motion.div>
