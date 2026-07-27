@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 
 import ProjectCard from './ProjectCard';
 
@@ -24,6 +25,17 @@ export default function Projects() {
       label: 'Graphic Design',
     },
   ];
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
 
   return (
     <section
@@ -130,16 +142,7 @@ export default function Projects() {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: 40,
-                },
-                show: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={cardVariants}
               transition={{
                 duration: 0.5,
                 ease: 'easeOut',
@@ -190,6 +193,32 @@ export default function Projects() {
               <GraphicDesignCard project={project} />
             </motion.div>
           ))}
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay: 0.4,
+            }}
+            className='flex justify-center mt-4 col-span-full'
+          >
+            <a
+              href='https://creativepool.com/nirushan-rajamanoaharan'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='View more graphic design work on Creativepool'
+              className='inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 rounded-full shadow-lg bg-gradient-to-r from-orange-700 to-amber-600 hover:scale-105 hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-orange-400/50'
+            >
+              More Graphic Design Works
+              <ExternalLink size={18} aria-hidden='true' />
+            </a>
+          </motion.div>
         </motion.div>
       ) : (
         <motion.div
