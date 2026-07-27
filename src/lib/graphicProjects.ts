@@ -82,16 +82,31 @@ export const graphicProjects: GraphicProject[] = [
 
     thumbnail: '/projects/graphic/ritual-set/image.png',
 
+    thumbnailType: 'image',
+
     gallery: [
-      '/projects/graphic/ritual-set/image.png',
-      '/projects/graphic/ritual-set/image1.png',
-      '/projects/graphic/ritual-set/image2.png',
-      '/projects/graphic/ritual-set/image3.png',
+      {
+        type: 'image',
+        src: '/projects/graphic/ritual-set/image.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/ritual-set/image1.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/ritual-set/image2.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/ritual-set/image3.png',
+      },
     ],
 
     figma: '',
     behance: '',
   },
+
   {
     id: 2,
 
@@ -109,33 +124,33 @@ export const graphicProjects: GraphicProject[] = [
 
     research: [
       'Audited paid social ads from travel agencies and OTA platforms to identify recurring layout patterns and conversion triggers.',
-      'Studied cruise-line marketing photography to understand the visual cues associated with premium travel positioning.',
-      'Reviewed trust-badge placement and hierarchy across travel booking ads, including protection schemes, ratings, and payment options.',
-      'Collected reference imagery around golden-hour skies and onboard lifestyle moments to define the emotional tone.',
+      'Studied cruise-line marketing photography to understand premium travel positioning.',
+      'Reviewed trust-badge placement and hierarchy across travel booking ads.',
+      'Collected reference imagery around golden-hour skies and onboard lifestyle moments.',
     ],
 
     designProcess: [
       'Mapped the ad as a top-to-bottom attention path: brand recognition, lifestyle proof, emotional hook, offer, urgency, trust.',
-      'Blocked out three circular lifestyle insets to preview onboard experiences before the hero shot is reached.',
-      'Positioned the cruise ship as the central visual anchor, shot at a three-quarter angle for scale and presence.',
-      'Layered pricing and urgency elements last, so they read as supporting proof rather than competing with the hero image.',
-      'Refined the headline typography scale and angle to add motion and energy while keeping full legibility.',
+      'Blocked out lifestyle insets to preview onboard experiences.',
+      'Positioned the cruise ship as the central visual anchor.',
+      'Layered pricing and urgency elements last.',
+      'Refined headline typography scale and angle.',
     ],
 
     designDecisions: [
-      'Used a deep navy (#0E2F5A) as the anchoring brand color, grounding the composition and pairing naturally with a maritime, premium-travel tone.',
-      'Introduced a mid-tone ocean blue (#1E6FB8) as a secondary accent to soften the transition between navy text blocks and the photographic sky.',
-      'Used a warm sunset orange (#F39C4A) to echo the golden-hour sky gradient, tying the logo and headline area visually back into the hero photograph.',
-      'Reserved a bold signal red (#D9303E) exclusively for the urgency ribbon badge, so it reads instantly as the one action-oriented element on the page.',
-      'Used white (#FFFFFF) for the price callout, headline, and pill badges to maximize contrast and legibility against the photographic background.',
-      'Added a light neutral grey (#D9DDE3) in the footer strip to let the trust badges sit on a quiet, low-contrast surface without competing with the primary palette.',
+      'Used deep navy as the anchoring brand color.',
+      'Introduced ocean blue as a secondary accent.',
+      'Used sunset orange to connect the design with the hero photography.',
+      'Reserved signal red for urgency messaging.',
+      'Used white for maximum contrast.',
+      'Added neutral grey for trust badge areas.',
     ],
 
     finalOutcome: [
-      'Delivered a scroll-stopping square ad optimized for Instagram and Facebook feed placements.',
-      'Established a repeatable campaign template that can be re-skinned for different ships, routes, and seasonal offers.',
-      'Balanced emotional lifestyle appeal with the pricing and trust information needed to justify a direct booking decision.',
-      'Produced a system flexible enough to extend into a full paid social campaign, including carousel and story variants.',
+      'Delivered a scroll-stopping social media campaign asset.',
+      'Created a reusable advertising layout system.',
+      'Balanced emotional travel storytelling with conversion-focused information.',
+      'Produced a flexible campaign foundation.',
     ],
 
     tools: ['Adobe Photoshop', 'Adobe Illustrator'],
@@ -173,7 +188,7 @@ export const graphicProjects: GraphicProject[] = [
       'Social Media Ad Design',
       'Campaign Layout System',
       'Lifestyle Photo Composition',
-      'Pricing & Offer Graphics',
+      'Pricing Graphics',
       'Trust Badge Footer System',
       'Carousel Variant Concepts',
       'Story Format Adaptation',
@@ -181,7 +196,14 @@ export const graphicProjects: GraphicProject[] = [
 
     thumbnail: '/projects/graphic/msc/image.png',
 
-    gallery: ['/projects/graphic/msc/image.png'],
+    thumbnailType: 'image',
+
+    gallery: [
+      {
+        type: 'image',
+        src: '/projects/graphic/msc/image.png',
+      },
+    ],
 
     figma: '',
     behance: '',
@@ -205,31 +227,31 @@ export const graphicProjects: GraphicProject[] = [
       'Studied classic scratchboard and pen-and-ink portrait illustration techniques.',
       'Analyzed reference photography to map key facial landmarks, light direction, and shadow zones before starting linework.',
       'Reviewed vector portrait artists who use hatching and stippling to simulate tonal depth without flat gradients.',
-      'Broke the reference image down into distinct value zones (highlight, midtone, core shadow, reflected light) to plan line density in advance.',
+      'Broke the reference image down into distinct value zones to plan line density in advance.',
     ],
 
     designProcess: [
-      'Built the illustration in layers, starting with a rough vector base shape for the head, ears, and shoulders.',
-      'Constructed facial features (eyes, glasses, nose, mouth) first to lock in likeness before adding surrounding texture.',
-      'Added directional hair strands using individual vector strokes to suggest natural growth patterns and volume.',
-      'Layered varying line weights and hatching density across the beard, jawline, and cheeks to build tonal depth.',
-      'Refined contrast by pushing near-black shadow areas (hairline, under-chin, collar) against untouched white highlights.',
+      'Built the illustration in layers, starting with a rough vector base shape.',
+      'Constructed facial features first to lock in likeness before adding surrounding texture.',
+      'Added directional hair strands using individual vector strokes.',
+      'Layered varying line weights and hatching density across facial areas.',
+      'Refined contrast by pushing darker shadow areas against untouched highlights.',
     ],
 
     designDecisions: [
-      'Kept the palette strictly black and white to focus entirely on line quality, contrast, and form rather than color.',
-      'Used fine, directional hatching on the beard and hair to imply texture and growth direction rather than flat fill shapes.',
-      'Rendered the glasses with thin, consistent line weight to keep them crisp and legible against the busier textured skin.',
-      'Left the forehead and cheekbones largely untouched white space to preserve highlight areas and prevent the illustration from feeling overworked.',
-      'Used heavier, denser linework around the jaw, ears, and collar to anchor the composition and create depth against the lighter upper face.',
-      'Simplified the clothing into solid black shapes to keep visual focus on the facial detail and likeness.',
+      'Kept the palette strictly black and white to focus on line quality, contrast, and form.',
+      'Used fine directional hatching to imply texture and growth direction.',
+      'Rendered glasses with consistent line weight for clarity.',
+      'Preserved white space around highlights to prevent visual overload.',
+      'Used heavier linework around the jaw, ears, and collar to create depth.',
+      'Simplified clothing into solid black shapes to keep focus on facial detail.',
     ],
 
     finalOutcome: [
-      'Produced a fully scalable vector portrait suitable for print, apparel, or large-format display without quality loss.',
-      'Achieved a strong likeness using purely linear illustration techniques, with no photographic or gradient shading.',
-      'Demonstrated control over line weight, density, and directional hatching as tools for building realistic tonal depth.',
-      'Created a personal study piece showcasing hand-illustration skill within a vector workflow.',
+      'Produced a scalable vector portrait suitable for print and large-format display.',
+      'Achieved realistic likeness using only linear illustration techniques.',
+      'Demonstrated control over line weight, density, and tonal depth.',
+      'Created a personal illustration study showcasing vector craftsmanship.',
     ],
 
     tools: ['Adobe Illustrator'],
@@ -251,11 +273,207 @@ export const graphicProjects: GraphicProject[] = [
 
     thumbnail: '/projects/graphic/steve_jobs/steve.jpg',
 
+    thumbnailType: 'image',
+
     gallery: [
-      '/projects/graphic/steve_jobs/part1_top_left.png',
-      '/projects/graphic/steve_jobs/part2_top_right.png',
-      '/projects/graphic/steve_jobs/part3_bottom_left.png',
-      '/projects/graphic/steve_jobs/part4_bottom_right.png',
+      {
+        type: 'image',
+        src: '/projects/graphic/steve_jobs/part1_top_left.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/steve_jobs/part2_top_right.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/steve_jobs/part3_bottom_left.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/steve_jobs/part4_bottom_right.png',
+      },
+    ],
+
+    figma: '',
+    behance: '',
+  },
+
+  {
+    id: 4,
+
+    category: 'video',
+
+    name: 'Halo Philippines — Website Welcome Video',
+
+    projectType: 'Motion Graphics & Video Advertising',
+
+    description:
+      'A welcome video created for the Halo Philippines website, introducing the agency and building emotional connection around flights to the Philippines. The edit combines family-reunion moments, destination and airport footage, in-flight and customer review proof points, and lifestyle travel shots, closing on branded contact and social details.',
+
+    challenge:
+      'Create a single welcome video for the homepage that introduces the Halo Philippines brand, builds emotional trust through real customer moments, provides credibility signals, and closes with clear contact information within a short attention-holding runtime.',
+
+    research: [
+      'Reviewed homepage welcome-video formats used by travel agencies.',
+      'Identified family reunions as the strongest emotional hook.',
+      'Audited available footage including family moments, airports, flights, reviews, and destinations.',
+      'Studied review overlay techniques for presenting trust signals.',
+    ],
+
+    designProcess: [
+      'Structured the video around emotional hook, brand reassurance, proof, aspiration, and contact.',
+      'Sequenced footage to balance emotional moments with branded segments.',
+      'Designed high-contrast text overlays for readability.',
+      'Created review screenshot compositions.',
+      'Built a branded closing card with contact details.',
+    ],
+
+    designDecisions: [
+      'Opened with an authentic family reunion moment instead of branding.',
+      'Used bold white typography for message clarity.',
+      'Layered customer reviews around emotional footage.',
+      'Included real travel moments to reinforce trust.',
+      'Closed with a clean branded end card.',
+      'Maintained purple and pink brand styling.',
+    ],
+
+    finalOutcome: [
+      'Delivered an emotional homepage introduction video.',
+      'Combined trust signals with storytelling.',
+      'Created a reusable video structure for future campaigns.',
+      'Produced a clear branded contact ending.',
+    ],
+
+    tools: ['Adobe Premiere Pro', 'Adobe After Effects'],
+
+    colors: [
+      {
+        name: 'Deep Purple',
+        value: '#4B0082',
+      },
+      {
+        name: 'Soft Pink',
+        value: '#E8A0BF',
+      },
+      {
+        name: 'Luxury Gold',
+        value: '#D4AF37',
+      },
+      {
+        name: 'Pure White',
+        value: '#FFFFFF',
+      },
+    ],
+
+    typography: ['Bold Sans Serif', 'Script Accent'],
+
+    deliverables: [
+      'Website Welcome Video',
+      'Motion Graphic Text Overlays',
+      'Customer Review Overlay Sequence',
+      'Branded End Card',
+      'Social Media Cutdown',
+    ],
+
+    thumbnail:
+      '/projects/graphic/halo_philippines/halo-philippines-welcome-thumbnail.jpg',
+
+    thumbnailType: 'image',
+
+    gallery: [
+      {
+        type: 'video',
+        src: '/projects/graphic/halo_philippines/halo_philippines.mp4',
+      },
+    ],
+
+    figma: '',
+    behance: '',
+  },
+  {
+    id: 5,
+
+    category: 'analysis',
+
+    name: "Munchy's Oat Krunch — Print Ad Breakdown",
+
+    projectType: 'Design Analysis / Print Advertisement Teardown',
+
+    description:
+      "A design breakdown of Munchy's Oat Krunch print catalog advertisement, examining how the layout, product photography, and trust-signal placement work together to communicate category leadership and product variety in a single-page format.",
+
+    challenge:
+      'Analyze how a category-leading snack brand structures a single print page to simultaneously build brand recognition, spotlight hero product photography, prove market credibility, showcase a full product range, and provide clear business contact information — all within one static layout.',
+
+    research: [
+      "Reviewed the ad's overall grid to identify how attention flows from brand mark to hero product to supporting range.",
+      'Studied the accreditation and award badge placement to understand how credibility markers are used to reinforce the "No.1" positioning claim.',
+      'Compared the hero product photography treatment against the smaller packaging shots to assess how scale and cropping direct focus.',
+      'Noted the use of the torn-poster illustration device as a layout technique for breaking the product out of a flat background.',
+    ],
+
+    designProcess: [
+      'Mapped the page into four functional zones: brand header, hero product statement, product range strip, and corporate footer.',
+      'Traced the visual hierarchy from the logo (top left) through the hero biscuit image to the bold "No.1" claim beneath it.',
+      'Identified how the four flavor variants are presented as a uniform horizontal row to communicate range without competing with the hero shot.',
+      'Examined the footer band as a distinct color-blocked zone separating brand contact information from the promotional content above.',
+    ],
+
+    designDecisions: [
+      'Notes that the torn-paper illustration around the hero biscuit is used to create depth and make the product feel like it is breaking through the page, adding dynamism to a static print format.',
+      'Observes that certification and award badges are placed close to the brand logo rather than near the product, positioning credibility as a brand-level claim rather than a single-product one.',
+      'Highlights the consistent circular red mark shared between the logo and packaging designs, reinforcing brand recognition even at the small scale of the four product shots.',
+      'Points out that the bold red "No.1" claim uses a different color from the rest of the palette specifically to draw the eye as the page\'s single strongest statement.',
+      'Notes the product range row is kept visually uniform in size and spacing so no single flavor is favored over another, supporting a "full range" message rather than a single hero SKU.',
+      "Identifies the footer's solid red color block as a deliberate device to separate transactional/contact information from the emotive product storytelling above it.",
+    ],
+
+    finalOutcome: [
+      'Produced a structured teardown identifying the layout, hierarchy, and credibility-building techniques used in a category-leading FMCG print advertisement.',
+      'Demonstrated the ability to reverse-engineer commercial design decisions rather than only originate new ones.',
+      'Built a reference framework (brand header, hero statement, range strip, footer) that can inform future packaging or catalog ad layouts.',
+    ],
+
+    tools: ['Adobe Photoshop (annotation)', 'Adobe Illustrator'],
+
+    colors: [
+      {
+        name: 'Red',
+        value: '#C62828',
+      },
+      {
+        name: 'Pure White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Warm Brown',
+        value: '#8B5E3C',
+      },
+      {
+        name: 'Gold',
+        value: '#D4AF37',
+      },
+    ],
+
+    typography: [
+      'Bold Script Logotype',
+      'Bold Serif Display',
+      'Clean Sans Serif',
+    ],
+
+    deliverables: [
+      'Design Breakdown Document',
+      'Layout Hierarchy Analysis',
+      'Annotated Reference Image',
+    ],
+
+    thumbnail: '/projects/graphic/munchys/munchys.jpg',
+
+    gallery: [
+      {
+        type: 'image',
+        src: '/projects/graphic/munchys/munchys.jpg',
+      },
     ],
 
     figma: '',

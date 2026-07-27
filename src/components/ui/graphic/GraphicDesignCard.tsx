@@ -62,7 +62,7 @@ export default function GraphicDesignCard({ project }: GraphicDesignCardProps) {
               ))}
             </div>
 
-            <div className='flex items-center justify-between pt-3 border-t mt-7 border-neutral-200 dark:border-neutral-800'>
+            <div className='flex items-center justify-between pt-3 border-t mt-7 border-neutral-200 dark:border-neutral-600'>
               <span className='text-sm font-semibold text-orange-600'>
                 View Case Study
               </span>

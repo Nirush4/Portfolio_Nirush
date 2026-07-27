@@ -1,15 +1,22 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { GraphicProject } from '@/types/graphicProject';
+import MediaPreviewModal from './MediaPreviewModal';
 
 interface DesignGalleryProps {
   project: GraphicProject;
 }
 
 export default function DesignGallery({ project }: DesignGalleryProps) {
+  const [selectedMedia, setSelectedMedia] = useState<{
+    type: 'image' | 'video';
+    src: string;
+  } | null>(null);
+
   if (!project.gallery?.length) {
     return null;
   }
@@ -21,9 +28,10 @@ export default function DesignGallery({ project }: DesignGalleryProps) {
       </h3>
 
       <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-        {project.gallery.map((image, index) => (
+        {project.gallery.map((media, index) => (
           <motion.figure
-            key={`${image}-${index}`}
+            key={`${media.src}-${index}`}
+            onClick={() => setSelectedMedia(media)}
             initial={{
               opacity: 0,
               y: 40,
@@ -38,31 +46,46 @@ export default function DesignGallery({ project }: DesignGalleryProps) {
             transition={{
               delay: index * 0.1,
             }}
-            className='relative flex items-center justify-center overflow-hidden shadow-sm bg-stone-100 group aspect-square rounded-3xl'
+            className='relative overflow-hidden bg-white shadow-sm cursor-pointer group rounded-3xl aspect-square'
           >
-            <Image
-              src={image}
-              alt={`${project.name} gallery preview ${index + 1}`}
-              fill
-              sizes='
-                (max-width:640px) 100vw,
-                (max-width:1024px) 50vw,
-                33vw
-              '
-              className='object-contain p-3 transition-transform duration-700 group-hover:scale-105'
-            />
+            {media.type === 'image' ? (
+              <Image
+                src={media.src}
+                alt={`${project.name} gallery ${index + 1}`}
+                fill
+                sizes='
+                  (max-width:640px) 100vw,
+                  (max-width:1024px) 50vw,
+                  33vw
+                '
+                className='object-contain transition-transform duration-700 group-hover:scale-105'
+              />
+            ) : (
+              <video
+                src={media.src}
+                muted
+                playsInline
+                preload='metadata'
+                className='object-contain w-full h-full bg-black'
+              />
+            )}
 
-            <div
-              aria-hidden='true'
-              className='absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:opacity-100'
-            />
+            <div className='absolute inset-0 transition duration-300 bg-black/0 group-hover:bg-black/20' />
 
-            <figcaption className='absolute px-4 py-2 text-sm font-medium transition-all duration-300 translate-y-3 rounded-full opacity-0 bottom-5 left-5 bg-white/90 text-neutral-800 backdrop-blur group-hover:opacity-100 group-hover:translate-y-0'>
-              Image {index + 1}
+            <figcaption className='absolute px-4 py-2 text-sm font-medium transition-opacity duration-300 rounded-full opacity-0 bottom-5 left-5 bg-white/90 text-neutral-800 backdrop-blur group-hover:opacity-100'>
+              {media.type === 'video'
+                ? 'Click to preview video'
+                : 'Click to view full image'}
             </figcaption>
           </motion.figure>
         ))}
       </div>
+
+      <MediaPreviewModal
+        isOpen={!!selectedMedia}
+        media={selectedMedia}
+        onClose={() => setSelectedMedia(null)}
+      />
     </section>
   );
 }
