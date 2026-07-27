@@ -88,7 +88,7 @@ export default function GraphicDesignModal({
               type='button'
               aria-label='Close project details'
               onClick={onClose}
-              className='absolute z-50 flex items-center justify-center w-12 h-12 transition bg-white rounded-full shadow-lg right-5 top-5 text-neutral-800 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-orange-400'
+              className='absolute z-50 flex items-center justify-center w-12 h-12 transition bg-white rounded-full shadow-lg cursor-pointer right-5 top-5 text-neutral-800 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-orange-400'
             >
               <X size={22} />
             </button>

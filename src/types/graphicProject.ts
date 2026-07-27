@@ -1,3 +1,8 @@
+export interface GraphicMedia {
+  type: 'image' | 'video';
+  src: string;
+}
+
 export interface GraphicColor {
   name: string;
   value: string;
@@ -21,12 +26,16 @@ export interface GraphicProject {
   tools: string[];
 
   colors: GraphicColor[];
+
   typography: string[];
 
   deliverables: string[];
 
   thumbnail: string;
-  gallery: string[];
+
+  gallery: GraphicMedia[];
+
+  thumbnailType?: 'image' | 'video';
 
   figma?: string;
   behance?: string;
