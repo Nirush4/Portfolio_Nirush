@@ -479,4 +479,96 @@ export const graphicProjects: GraphicProject[] = [
     figma: '',
     behance: '',
   },
+  {
+    id: 6,
+    category: 'graphic',
+    name: 'Voltix — Energy Drink Product & Packaging Design',
+    projectType: 'Beverage Product & Packaging Design',
+    description:
+      'A bold energy drink concept built around speed, focus, and adrenaline. The product and packaging system pairs a sleek matte can design with a high-contrast neon identity, translating raw energy into a visual language that stands out on crowded convenience store shelves.',
+    challenge:
+      'Design a full beverage packaging system — from the can itself to its multipack carrier — that communicates high energy and performance at a glance, while remaining premium enough to differentiate from typical high-sugar, low-cost energy drink branding.',
+    research: [
+      'Analyzed leading energy drink brands to identify recurring visual clichés (aggressive typography, generic lightning bolts, oversaturated color) worth avoiding.',
+      'Studied convenience store cooler environments to understand shelf density and how packaging needs to read instantly from a distance.',
+      "Collected references on motorsport, night-run, and performance-culture visuals to inform the brand's energy narrative.",
+      'Built mood boards contrasting matte-black premium aesthetics against neon accent colors to test shelf standout versus refinement.',
+    ],
+    designProcess: [
+      'Developed the brand concept around the idea of "controlled energy" — power that is precise rather than chaotic.',
+      'Designed the can form and label system, testing label wrap treatments and finish combinations for shelf impact.',
+      'Extended the identity into a multipack carrier and case packaging, maintaining visual consistency across all formats.',
+      'Produced high-fidelity commercial mockups simulating cooler shelf placement, lifestyle use, and studio product photography.',
+    ],
+    designDecisions: [
+      'Used a matte black can body as the base to signal premium positioning and create maximum contrast against the neon-lime accent color.',
+      'Introduced a single sharp lightning-bolt mark rather than a busy graphic system, keeping the logo legible at small scale and from a distance.',
+      'Applied a brushed metallic silver band around the can to add a tactile, engineered quality that reinforces a "performance product" feel over a "sugary drink" feel.',
+      'Selected a bold geometric sans-serif for the wordmark to communicate speed and precision, paired with a condensed monospace for functional details like caffeine content.',
+      'Restrained the color palette to black, neon-lime, and silver only, avoiding the multi-color chaos common in the category to keep the brand feeling controlled and premium.',
+      'Designed the multipack carrier with die-cut circular windows so the neon can tops remain visible on shelf, preserving shelf recognition even when packaged.',
+      'Directed dynamic, motion-inspired product photography (condensation, splash, light streaks) to reinforce the energy narrative across marketing touchpoints.',
+    ],
+    finalOutcome: [
+      'Developed a cohesive product and packaging system that reads as premium and performance-driven rather than generic or purely sugar-fueled.',
+      'Created a scalable visual identity that holds up across single-can, multipack, and case formats without losing shelf impact.',
+      'Demonstrated how restrained color and material choices can differentiate a product within a highly saturated, visually loud category.',
+      'Delivered a full set of commercial-grade product visualizations suitable for retail, lifestyle, and advertising use.',
+    ],
+    tools: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe Dimension'],
+    colors: [
+      {
+        name: 'Matte Black',
+        value: '#111111',
+      },
+      {
+        name: 'Neon Lime',
+        value: '#C6FF3D',
+      },
+      {
+        name: 'Brushed Silver',
+        value: '#B8BCC2',
+      },
+      {
+        name: 'Electric Blue',
+        value: '#2E9BFF',
+      },
+    ],
+    typography: ['Bold Geometric Sans Serif', 'Condensed Monospace'],
+    deliverables: [
+      'Brand Identity',
+      'Can Design',
+      'Label Design',
+      'Multipack Carrier Design',
+      'Case Packaging',
+      'Product Visualization',
+      'Lifestyle Mockups',
+      'Retail/Cooler Mockups',
+      'Hero Product Images',
+    ],
+    thumbnail: '/projects/graphic/voltix/cover.png',
+    thumbnailType: 'image',
+    gallery: [
+      {
+        type: 'image',
+        src: '/projects/graphic/voltix/image1.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/voltix/image1.png',
+      },
+
+      {
+        type: 'image',
+
+        src: '/projects/graphic/voltix/image1.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/voltix/image1.png',
+      },
+    ],
+    figma: '',
+    behance: '',
+  },
 ];
