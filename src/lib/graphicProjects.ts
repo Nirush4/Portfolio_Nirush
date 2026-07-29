@@ -482,7 +482,7 @@ export const graphicProjects: GraphicProject[] = [
   {
     id: 6,
     category: 'graphic',
-    name: 'Voltix — Energy Drink Product & Packaging Design',
+    name: 'Voltage — Energy Drink Product & Packaging Design',
     projectType: 'Beverage Product & Packaging Design',
     description:
       'A bold energy drink concept built around speed, focus, and adrenaline. The product and packaging system pairs a sleek matte can design with a high-contrast neon identity, translating raw energy into a visual language that stands out on crowded convenience store shelves.',
@@ -546,26 +546,16 @@ export const graphicProjects: GraphicProject[] = [
       'Retail/Cooler Mockups',
       'Hero Product Images',
     ],
-    thumbnail: '/projects/graphic/voltix/cover.png',
+    thumbnail: '/projects/graphic/voltage/cover.png',
     thumbnailType: 'image',
     gallery: [
       {
         type: 'image',
-        src: '/projects/graphic/voltix/image1.png',
+        src: '/projects/graphic/voltage/cover.png',
       },
       {
         type: 'image',
-        src: '/projects/graphic/voltix/image1.png',
-      },
-
-      {
-        type: 'image',
-
-        src: '/projects/graphic/voltix/image1.png',
-      },
-      {
-        type: 'image',
-        src: '/projects/graphic/voltix/image1.png',
+        src: '/projects/graphic/voltage/image1.png',
       },
     ],
     figma: '',
