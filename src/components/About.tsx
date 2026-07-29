@@ -267,8 +267,8 @@ export function About() {
               handle='nirush4'
               status='Online'
               contactText='Contact Me'
-              avatarUrl='/IMG_9314.JPG'
-              miniAvatarUrl='/IMG_9314.JPG'
+              avatarUrl='/pic_for_portfolio.png'
+              miniAvatarUrl='/pic_for_portfolio.png'
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
