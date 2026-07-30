@@ -555,7 +555,19 @@ export const graphicProjects: GraphicProject[] = [
       },
       {
         type: 'image',
+        src: '/projects/graphic/voltage/image.png',
+      },
+      {
+        type: 'image',
         src: '/projects/graphic/voltage/image1.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/voltage/image2.png',
+      },
+      {
+        type: 'image',
+        src: '/projects/graphic/voltage/image3.png',
       },
     ],
     figma: '',
