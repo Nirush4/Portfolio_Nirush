@@ -5,14 +5,19 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
 import ProjectCard from './ProjectCard';
-
 import { projects } from '../lib/projects';
 import { graphicProjects } from '@/lib/graphicProjects';
 import GraphicDesignCard from './ui/graphic/GraphicDesignCard';
+import { GraphicProject } from '@/types/graphicProject';
 
+// Define ProjectCategory type here
 type ProjectCategory = 'frontend' | 'graphic';
 
-export default function Projects() {
+interface ProjectsProps {
+  onSelectProject?: (project: GraphicProject) => void;
+}
+
+export default function Projects({ onSelectProject }: ProjectsProps) {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('frontend');
 
   const tabs = [
@@ -188,7 +193,8 @@ export default function Projects() {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='flex justify-center'
+              className='flex justify-center cursor-pointer'
+              onClick={() => onSelectProject?.(project)}
             >
               <GraphicDesignCard project={project} />
             </motion.div>

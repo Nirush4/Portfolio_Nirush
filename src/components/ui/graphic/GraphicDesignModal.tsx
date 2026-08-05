@@ -1,8 +1,15 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from 'react';
+import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { X } from 'lucide-react';
+import { Check, Copy, X } from 'lucide-react';
 
 import { GraphicProject } from '@/types/graphicProject';
 import GraphicHero from './GraphicHero';
@@ -16,84 +23,127 @@ interface GraphicDesignModalProps {
   onClose: () => void;
 }
 
+// React 19 pattern to detect client hydration without triggering ESLint state-in-effect warnings
+const emptySubscribe = () => () => {};
+function useIsClient() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
+}
+
 export default function GraphicDesignModal({
   project,
   isOpen,
   onClose,
 }: GraphicDesignModalProps) {
+  const isClient = useIsClient();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const [copied, setCopied] = useState(false);
+
+  const handleClose = useCallback(() => {
+    document.body.style.overflow = '';
+    onClose();
+  }, [onClose]);
 
   useEffect(() => {
-    if (!isOpen) return;
+    if (!isOpen) {
+      document.body.style.overflow = '';
+      return;
+    }
 
     const previousOverflow = document.body.style.overflow;
-
     document.body.style.overflow = 'hidden';
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        onClose();
+        handleClose();
       }
     };
 
     document.addEventListener('keydown', handleKeyDown);
-
     closeButtonRef.current?.focus();
 
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.body.style.overflow = previousOverflow || '';
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
-  return (
-    <AnimatePresence>
+  const handleCopyLink = async () => {
+    try {
+      const shareableUrl = `${window.location.origin}${
+        window.location.pathname
+      }?project=${encodeURIComponent(String(project.id))}`;
+
+      await navigator.clipboard.writeText(shareableUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy link: ', err);
+    }
+  };
+
+  // Prevent SSR execution safely
+  if (!isClient) return null;
+
+  return createPortal(
+    <AnimatePresence
+      onExitComplete={() => {
+        document.body.style.overflow = '';
+      }}
+    >
       {isOpen && (
         <motion.div
           role='presentation'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/40 backdrop-blur-sm sm:p-6'
-          onClick={onClose}
+          transition={{ duration: 0.15 }}
+          className='fixed inset-0 z-[100] flex items-center justify-center p-3 bg-black/60 sm:p-6'
+          onClick={handleClose}
         >
-          <motion.article
+          <article
             role='dialog'
             aria-modal='true'
             aria-labelledby='graphic-title'
-            initial={{
-              opacity: 0,
-              y: 40,
-              scale: 0.96,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              scale: 1,
-            }}
-            exit={{
-              opacity: 0,
-              y: 40,
-              scale: 0.96,
-            }}
-            transition={{
-              duration: 0.45,
-              ease: 'easeOut',
-            }}
             onClick={(e) => e.stopPropagation()}
             className='relative w-full h-full max-w-7xl overflow-hidden bg-[#faf7f2] shadow-2xl rounded-3xl'
           >
-            <button
-              ref={closeButtonRef}
-              type='button'
-              aria-label='Close project details'
-              onClick={onClose}
-              className='absolute z-50 flex items-center justify-center w-12 h-12 transition bg-white rounded-full shadow-lg cursor-pointer right-5 top-5 text-neutral-800 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-orange-400'
-            >
-              <X size={22} />
-            </button>
+            {/* Top Right Controls Group */}
+            <div className='absolute z-50 flex items-center gap-3 right-5 top-5'>
+              <button
+                type='button'
+                aria-label={
+                  copied
+                    ? 'Project link copied to clipboard'
+                    : 'Copy project link'
+                }
+                aria-live='polite'
+                onClick={handleCopyLink}
+                className='flex items-center justify-center w-12 h-12 transition bg-white rounded-full shadow-lg cursor-pointer text-neutral-800 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-orange-400'
+              >
+                {copied ? (
+                  <Check size={20} className='text-emerald-600' />
+                ) : (
+                  <Copy size={20} />
+                )}
+              </button>
 
-            <div className='h-full overflow-y-auto scrollbar-hide'>
+              <button
+                ref={closeButtonRef}
+                type='button'
+                aria-label='Close project details'
+                onClick={handleClose}
+                className='flex items-center justify-center w-12 h-12 transition bg-white rounded-full shadow-lg cursor-pointer text-neutral-800 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-orange-400'
+              >
+                <X size={22} />
+              </button>
+            </div>
+
+            {/* Hardware-accelerated smooth scroll container */}
+            <div className='h-full overflow-y-auto transform-gpu will-change-transform scrollbar-hide'>
               <GraphicHero project={project} />
 
               <main className='max-w-6xl px-5 py-12 mx-auto space-y-20 sm:px-10'>
@@ -139,9 +189,10 @@ export default function GraphicDesignModal({
                 </section>
               </main>
             </div>
-          </motion.article>
+          </article>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }
